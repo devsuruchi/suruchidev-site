@@ -1,0 +1,6 @@
+# Robots.txt for Axis Physiotherapy - Dr. Suruchi Dev
+User-agent: *
+Allow: /
+
+# Sitemaps tell search engines where all your pages are
+Sitemap: https://yourdomain.com/sitemap.xml
