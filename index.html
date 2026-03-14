@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suruchi Dev | Neuro Physiotherapy & Affordable Web Design Nepal</title>
+    <title>Dr. Suruchi Dev | Neuro Physiotherapy & Affordable Web Design Nepal</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Suruchi Dev - Specialist Neuro Physiotherapist (MPT) & Web Developer. Expert home visit physiotherapy for Stroke, Paralysis & Rehab in Kathmandu. Professional websites at low cost.">
+    <meta name="description" content="Dr. Suruchi Dev - Specialist Neuro Physiotherapist (MPT) & Web Developer. Expert home visit physiotherapy for Stroke, Paralysis & Rehab in Kathmandu. Professional websites at low cost.">
     <meta name="keywords" content="Physiotherapy home visit Kathmandu, Stroke rehab Nepal, Paralysis treatment Kathmandu, Axis Physiotherapy Lalitpur, Affordable web design Nepal, Cheap website for doctors Nepal, Suruchi Dev, Massage therapy Kathmandu">
     
     <!-- Google Fonts -->
@@ -27,77 +27,107 @@
 </head>
 <body class="bg-slate-50 text-slate-900">
 
-    <!-- Navigation -->
-    <!-- Top Navigation Bar -->
-<nav class="fixed w-full z-[100] top-0 left-0 bg-white/80 backdrop-blur-lg border-b border-slate-200 shadow-sm">
-    <div class="container mx-auto px-4 md:px-8">
-        <div class="flex items-center justify-between h-20">
+    <!-- HEADER START -->
+<header class="fixed w-full z-[100] top-0 shadow-lg">
+    
+    <!-- 1. Top Info Bar (Email & Secondary Phone) -->
+    <div class="bg-slate-900 text-white py-2 px-4 md:px-8 hidden sm:block">
+        <div class="container mx-auto flex justify-between items-center text-xs md:text-sm font-medium">
+            <div class="flex items-center space-x-6">
+                <!-- Email Link -->
+                <a href="mailto:info@suruchidev.com.np" class="flex items-center hover:text-blue-400 transition">
+                    <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                    info@suruchidev.com.np
+                </a>
+                <!-- Second Contact -->
+                <a href="tel:+9779818649947" class="flex items-center hover:text-blue-400 transition">
+                    <i class="fas fa-phone-alt mr-2 text-blue-400"></i>
+                    +977 9818649947
+                </a>
+            </div>
+            <div class="hidden lg:block text-slate-400 tracking-wide uppercase text-[10px]">
+                NHPC Licensed: A-1169 PHY | MPT Neurology Specialist
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Main Navigation Bar -->
+    <nav class="bg-white/90 backdrop-blur-md border-b border-slate-200 py-3 px-4 md:px-8">
+        <div class="container mx-auto flex items-center justify-between">
             
             <!-- Logo Section -->
             <a href="#" class="flex items-center space-x-3 group">
-                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform">
-                    <i class="fas fa-hand-holding-medical text-white text-xl"></i>
+                <div class="w-11 h-11 bg-blue-700 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                    <i class="fas fa-microchip text-white text-xl"></i>
                 </div>
                 <div class="flex flex-col">
-                    <span class="text-xl font-black text-slate-900 leading-none tracking-tighter uppercase">Suruchi<span class="text-blue-600">Dev</span></span>
-                    <span class="text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase mt-1">Neuro Physio & Tech</span>
+                    <span class="text-xl font-black text-slate-900 leading-none tracking-tighter uppercase italic">Suruchi<span class="text-blue-600">Dev</span></span>
+                    <span class="text-[9px] font-bold text-slate-500 tracking-[0.25em] uppercase mt-1">Neuro-Physio & Tech</span>
                 </div>
             </a>
 
             <!-- Desktop Menu (Center) -->
-            <div class="hidden lg:flex items-center space-x-8 font-semibold text-slate-600 text-sm uppercase tracking-wider">
-                <a href="#physio" class="hover:text-blue-600 transition-colors">Physiotherapy</a>
+            <div class="hidden lg:flex items-center space-x-8 font-bold text-slate-700 text-[13px] uppercase tracking-widest">
+                <a href="#physio" class="hover:text-blue-600 transition-colors">Medical Services</a>
                 <a href="#web" class="hover:text-blue-600 transition-colors">Web Design</a>
                 <a href="#contact" class="hover:text-blue-600 transition-colors">Clinics</a>
             </div>
 
             <!-- Action Buttons (Right) -->
             <div class="flex items-center space-x-2 md:space-x-4">
-                <!-- Direct Call (Desktop Hidden, Mobile Visible as Icon) -->
-                <a href="tel:+9779863201528" class="p-3 bg-slate-100 text-slate-700 rounded-full hover:bg-blue-50 hover:text-blue-600 transition-all" title="Call Now">
+                <!-- Direct Call Mobile -->
+                <a href="tel:+9779863201528" class="p-3 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-600 hover:text-white transition-all shadow-sm" title="Call Suruchi Dev">
                     <i class="fas fa-phone-alt"></i>
                 </a>
 
-                <!-- WhatsApp Call Button (High Conversion) -->
-                <a href="https://wa.me/9779863201528" target="_blank" class="flex items-center space-x-2 bg-[#25D366] text-white px-4 py-2.5 rounded-full shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/9779863201528" target="_blank" class="flex items-center space-x-2 bg-[#25D366] text-white px-5 py-2.5 rounded-full shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all">
                     <i class="fab fa-whatsapp text-xl"></i>
-                    <span class="hidden md:inline font-bold text-sm uppercase tracking-tight">WhatsApp Us</span>
+                    <span class="hidden md:inline font-extrabold text-sm uppercase tracking-tight">WhatsApp</span>
                 </a>
                 
-                <!-- Mobile Menu Button (Hamburger) -->
-                <button class="lg:hidden p-2 text-slate-900" id="mobile-menu-btn">
+                <!-- Hamburger Menu for Mobile -->
+                <button class="lg:hidden p-2 text-slate-900 hover:bg-slate-100 rounded-lg" id="mobile-menu-btn">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Mobile Dropdown Menu (Hidden by default) -->
-    <div class="lg:hidden hidden bg-white border-t border-slate-100 px-6 py-6 space-y-4 shadow-2xl" id="mobile-menu">
-        <a href="#physio" class="block text-lg font-bold text-slate-800">Physiotherapy Services</a>
-        <a href="#web" class="block text-lg font-bold text-slate-800">Affordable Web Design</a>
-        <a href="#contact" class="block text-lg font-bold text-slate-800">Contact & Clinics</a>
-        <div class="pt-4 flex flex-col gap-3">
-            <a href="tel:+9779863201528" class="flex items-center justify-center gap-2 bg-blue-600 text-white py-3 rounded-xl font-bold">
-                <i class="fas fa-phone"></i> Call Now
-            </a>
+    <!-- 3. Mobile Dropdown Menu -->
+    <div class="lg:hidden hidden bg-white border-t border-slate-100 shadow-2xl animate-fade-in" id="mobile-menu">
+        <div class="px-6 py-8 space-y-6">
+            <div class="flex flex-col space-y-4">
+                <a href="#physio" class="text-xl font-bold text-slate-800 border-b pb-2">Medical Services</a>
+                <a href="#web" class="text-xl font-bold text-slate-800 border-b pb-2">Web Design</a>
+                <a href="#contact" class="text-xl font-bold text-slate-800 border-b pb-2">Our Clinics</a>
+                <a href="mailto:info@suruchidev.com.np" class="text-blue-600 font-semibold"><i class="fas fa-envelope mr-2"></i> info@suruchidev.com.np</a>
+            </div>
+            <div class="pt-4 flex flex-col gap-3">
+                <a href="https://wa.me/9779863201528" class="flex items-center justify-center gap-2 bg-[#25D366] text-white py-4 rounded-2xl font-bold shadow-lg">
+                    <i class="fab fa-whatsapp text-xl"></i> WhatsApp Message
+                </a>
+                <a href="tel:+9779863201528" class="flex items-center justify-center gap-2 bg-slate-900 text-white py-4 rounded-2xl font-bold shadow-lg">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
+            </div>
         </div>
     </div>
-</nav>
+</header>
 
-<!-- Padding helper to prevent content from going under the fixed nav -->
-<div class="h-20"></div>
+<!-- Spacer to prevent content from hiding behind the fixed header -->
+<div class="h-24 md:h-32"></div>
 
-<!-- Mobile Menu Logic Script -->
 <script>
+    // Logic for Mobile Menu Toggle
     const btn = document.getElementById('mobile-menu-btn');
     const menu = document.getElementById('mobile-menu');
 
     btn.addEventListener('click', () => {
         menu.classList.toggle('hidden');
     });
-    
-    // Close menu when clicking a link
+
+    // Close menu when a link is clicked
     document.querySelectorAll('#mobile-menu a').forEach(link => {
         link.addEventListener('click', () => {
             menu.classList.add('hidden');
