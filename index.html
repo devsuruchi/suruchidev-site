@@ -1,211 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ne">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suruchi Dev | Neurological Physiotherapist & Web Developer Nepal</title>
+    <title>Suruchi Dev | Neuro Physiotherapy & Affordable Web Design Nepal</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Suruchi Dev - MPT (Neurology), NHPC A-1169 PHY. Specialized Neurological Physiotherapy home visits in Kathmandu & Lalitpur. Founder of Axis Physiotherapy Pvt. Ltd.">
-    <meta name="keywords" content="Physiotherapy Nepal, Home Visit Physiotherapy Kathmandu, Neuro Physiotherapist Lalitpur, Axis Physiotherapy, Suruchi Dev, Stroke Rehabilitation Nepal, Web Design for Doctors Nepal">
-    <meta name="author" content="Suruchi Dev">
-    <link rel="canonical" href="https://suruchidev.com.np/" />
-
-    <!-- Open Graph (Facebook/LinkedIn) -->
-    <meta property="og:title" content="Suruchi Dev | Neuro Physiotherapist & Web Developer">
-    <meta property="og:description" content="Expert Neurological Physiotherapy home visits and professional web design services in Nepal.">
-    <meta property="og:url" content="https://suruchidev.com.np/">
-    <meta property="og:type" content="website">
-
-    <!-- Tailwind CSS for Styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Suruchi Dev - Specialist Neuro Physiotherapist (MPT) & Web Developer. Expert home visit physiotherapy for Stroke, Paralysis & Rehab in Kathmandu. Professional websites at low cost.">
+    <meta name="keywords" content="Physiotherapy home visit Kathmandu, Stroke rehab Nepal, Paralysis treatment Kathmandu, Axis Physiotherapy Lalitpur, Affordable web design Nepal, Cheap website for doctors Nepal, Suruchi Dev, Massage therapy Kathmandu">
     
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
-        scroll-behavior: smooth;
-        .hero-gradient {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .nepali-font { font-family: 'Mukta', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .gradient-text { background: linear-gradient(90deg, #0f172a, #2563eb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-bg { background: radial-gradient(circle at top right, #f0f9ff, #ffffff); }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.3s ease; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-slate-50 text-slate-900">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white shadow-md">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-800">Suruchi<span class="text-blue-500">Dev</span></a>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="#clinics" class="hover:text-blue-600 transition">Clinics</a>
-                <a href="#tech" class="hover:text-blue-600 transition">Web Design</a>
-                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Book Home Visit</a>
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-xl font-bold tracking-tight text-blue-900 uppercase">Suruchi Dev</span>
+                <span class="text-xs font-semibold text-blue-600">MPT (Neurology) | Developer</span>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#physio" class="hover:text-blue-600 font-medium">Physiotherapy</a>
+                <a href="#web" class="hover:text-blue-600 font-medium">Web Design</a>
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-700 transition">Book Now</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 hero-gradient text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Expert Neurological Physiotherapy</h1>
-            <p class="text-xl md:text-2xl mb-8 opacity-90">Specialized Home Visits & Clinical Care in Kathmandu & Lalitpur</p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="tel:+9779863201528" class="bg-white text-blue-800 px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:bg-gray-100 transition">
-                    <i class="fas fa-phone-alt mr-2"></i> Call for Home Visit
-                </a>
-                <a href="#clinics" class="border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-800 transition">
-                    Visit Our Clinic
-                </a>
-            </div>
-            <p class="mt-6 text-sm italic">NHPC Registered: A-1169 PHY</p>
-        </div>
-    </section>
-
-    <!-- Professional Credentials Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-wrap items-center">
-                <div class="w-full md:w-1/2 mb-10 md:mb-0 text-center">
-                    <div class="relative inline-block">
-                        <!-- Placeholder for your photo -->
-                        <div class="w-64 h-64 rounded-full bg-blue-100 border-4 border-blue-600 flex items-center justify-center mx-auto overflow-hidden">
-                             <i class="fas fa-user-md text-8xl text-blue-600"></i>
-                        </div>
-                        <div class="absolute bottom-0 right-0 bg-green-500 text-white px-4 py-1 rounded-full text-sm font-bold">Verified Professional</div>
-                    </div>
+    <section class="hero-bg pt-40 pb-20 px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">Dual Professional Expertise</span>
+                <h1 class="text-5xl md:text-6xl font-bold mt-6 leading-tight">
+                    Expert Care for <span class="gradient-text">Your Body</span> & Digital Growth for <span class="gradient-text">Your Brand</span>
+                </h1>
+                <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+                    Providing specialized <b>Neuro-Physiotherapy home visits</b> in Kathmandu and 
+                    <b>Professional Web Design</b> at highly affordable rates for healthcare professionals.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="tel:+9779863201528" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold shadow-2xl hover:bg-slate-800 transition">
+                        <i class="fas fa-home mr-2"></i> Home Visit Physio
+                    </a>
+                    <a href="#web" class="bg-white border border-slate-300 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition">
+                        <i class="fas fa-code mr-2"></i> Low-Cost Web Design
+                    </a>
                 </div>
-                <div class="w-full md:w-1/2">
-                    <h2 class="text-3xl font-bold mb-4">Suruchi Dev, BPT, MPT (Neurology)</h2>
-                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-                        I am a dedicated Neurological Physiotherapist specializing in the rehabilitation of patients with stroke, spinal cord injuries, and movement disorders. My approach combines clinical precision with compassionate care, ensuring patients regain their independence within the comfort of their homes or at my specialized clinic.
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Specialized in Neuro-Rehabilitation</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> NHPC Registered Practitioner (A-1169 PHY)</li>
-                        <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Expert in Personalized Home Recovery Plans</li>
-                    </ul>
+            </div>
+            <div class="relative">
+                <!-- Aesthetic Image Placeholder -->
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Physiotherapy Care" class="rounded-3xl shadow-2xl">
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
+                    <p class="text-blue-600 font-bold text-2xl">100%</p>
+                    <p class="text-sm text-slate-500 font-medium">Licensed (NHPC A-1169)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clinic Locations -->
-    <section id="clinics" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Clinical Presence</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Main Clinic -->
-                <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-blue-600">
-                    <h3 class="text-xl font-bold mb-2">Axis Physiotherapy Pvt. Ltd.</h3>
-                    <p class="text-blue-600 font-medium mb-4">Pulchowk, Lalitpur</p>
-                    <p class="text-gray-600 mb-6">Our flagship center equipped with modern rehabilitation tools.</p>
-                    <a href="https://axisphysiotherapy.com.np/" target="_blank" class="text-blue-600 font-bold hover:underline">Visit Website →</a>
-                </div>
-                <!-- Silverline -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <h3 class="text-xl font-bold mb-2">Silverline Hospital</h3>
-                    <p class="text-blue-600 font-medium mb-4">Balaju, Kathmandu</p>
-                    <p class="text-gray-600 mb-6">Managing the specialized physiotherapy department for inpatient care.</p>
-                </div>
-                <!-- Karuna -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <h3 class="text-xl font-bold mb-2">Karuna City Clinic</h3>
-                    <p class="text-blue-600 font-medium mb-4">Nayabazaar, Kathmandu</p>
-                    <p class="text-gray-600 mb-6">Outpatient consultation and neurological screening services.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech & Web Design Section -->
-    <section id="tech" class="py-20 bg-slate-900 text-white">
+    <!-- Conditions Section (Nepali + English) -->
+    <section id="physio" class="py-24 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">Healthcare Meets Technology</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto">As a data scientist and web developer, I build professional digital identities for healthcare providers.</p>
+                <h2 class="text-3xl font-bold mb-4">Specialized Rehabilitation Services</h2>
+                <p class="text-slate-500 nepali-font text-xl">हामी यी समस्याहरूको प्रभावकारी उपचार गर्छौं</p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Portfolio Items -->
-                <a href="https://axisphysiotherapy.com.np/" class="group block p-4 bg-slate-800 rounded-lg hover:bg-slate-700 transition">
-                    <div class="text-blue-400 text-2xl mb-2 font-bold italic">Axis Physio</div>
-                    <p class="text-sm text-gray-400">Clinic Website & SEO</p>
-                </a>
-                <a href="https://wellness-adobe.com/" class="group block p-4 bg-slate-800 rounded-lg hover:bg-slate-700 transition">
-                    <div class="text-green-400 text-2xl mb-2 font-bold italic">Wellness Adobe</div>
-                    <p class="text-sm text-gray-400">Content Management</p>
-                </a>
-                <a href="https://physiotherapy-near-me-nu.vercel.app/" class="group block p-4 bg-slate-800 rounded-lg hover:bg-slate-700 transition">
-                    <div class="text-purple-400 text-2xl mb-2 font-bold italic">Physio Near Me</div>
-                    <p class="text-sm text-gray-400">React/Vercel App</p>
-                </a>
-                <div class="p-4 bg-blue-600 rounded-lg">
-                    <h4 class="font-bold">Need a Website?</h4>
-                    <p class="text-xs">HTML, CSS, Python, Hosting & SEO</p>
-                    <p class="mt-2 font-bold underline">Contact Me</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Stroke -->
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 card-hover">
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-brain text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Stroke / Paralysis</h3>
+                    <p class="text-blue-600 font-bold nepali-font text-lg mb-3">पक्षघात (प्यारालाइसिस) पुनर्स्थापना</p>
+                    <p class="text-slate-600">Specialized neuro-rehab to regain mobility and muscle strength after a stroke.</p>
+                </div>
+
+                <!-- Post Surgery -->
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 card-hover">
+                    <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-user-nurse text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Post-Surgery Rehab</h3>
+                    <p class="text-emerald-600 font-bold nepali-font text-lg mb-3">शल्यक्रिया पछिको फिजियोथेरापी</p>
+                    <p class="text-slate-600">Recovery plans for hip/knee replacements and spine surgeries at cost-effective rates.</p>
+                </div>
+
+                <!-- Sports Injury -->
+                <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 card-hover">
+                    <div class="w-14 h-14 bg-orange-600 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fas fa-running text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Sports Injury</h3>
+                    <p class="text-orange-600 font-bold nepali-font text-lg mb-3">खेलकुद चोटपटक उपचार</p>
+                    <p class="text-slate-600">Fast recovery for ligament tears, sprains, and muscle strains for athletes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
+    <!-- Trust Banner: Home Visit & Massage -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Quality Care in Your Living Room</h2>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle mt-1 mr-4 text-emerald-400"></i>
+                        <div>
+                            <p class="font-bold">Licensed Physiotherapists Only</p>
+                            <p class="text-blue-200 text-sm">Treatment by NHPC registered MPT/BPT professionals.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle mt-1 mr-4 text-emerald-400"></i>
+                        <div>
+                            <p class="font-bold">Professional Massage Therapy</p>
+                            <p class="text-blue-200 text-sm">Certified massage therapists for muscle relaxation and blood circulation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1581071807066-d56229a3fc61?auto=format&fit=crop&w=400&q=80" alt="Home Physio" class="rounded-2xl shadow-lg border-2 border-blue-800">
+                <img src="https://images.unsplash.com/photo-1544126592-807daa2e5682?auto=format&fit=crop&w=400&q=80" alt="Massage Therapy" class="rounded-2xl shadow-lg border-2 border-blue-800 mt-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Low Cost Web Design Section -->
+    <section id="web" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white overflow-hidden relative">
+                <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold mb-6 italic">Low-Cost Website Design for Doctors & Clinics</h2>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            Need a professional digital presence? I design high-performance, SEO-friendly websites starting at budget rates.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li><i class="fas fa-bolt text-yellow-400 mr-2"></i> Free Domain & Hosting Support</li>
+                            <li><i class="fas fa-bolt text-yellow-400 mr-2"></i> Google SEO Integration</li>
+                            <li><i class="fas fa-bolt text-yellow-400 mr-2"></i> Professional Email Setup</li>
+                        </ul>
+                        <div class="flex gap-4">
+                            <a href="https://axisphysiotherapy.com.np/" target="_blank" class="text-sm border-b border-blue-400 pb-1">View Axis Website</a>
+                            <a href="https://wellness-adobe.com/" target="_blank" class="text-sm border-b border-blue-400 pb-1">View Wellness Adobe</a>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700">
+                        <p class="text-blue-400 font-bold mb-2">Web Package Starts At</p>
+                        <p class="text-5xl font-extrabold mb-6 font-mono">Rs. Low Cost</p>
+                        <a href="https://wa.me/9779863201528" class="block text-center bg-blue-600 p-4 rounded-xl font-bold hover:bg-blue-500 transition">Get a Quote Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic & Contact Section -->
+    <section id="contact" class="py-24 bg-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12">Get In Touch</h2>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-                <div class="text-left space-y-6">
-                    <div class="flex items-start">
-                        <div class="bg-blue-100 p-3 rounded-full text-blue-600 mr-4"><i class="fas fa-phone"></i></div>
-                        <div>
-                            <h4 class="font-bold">Phone</h4>
-                            <p>+977 9863201528</p>
-                            <p>+977 9818649947</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="bg-blue-100 p-3 rounded-full text-blue-600 mr-4"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <h4 class="font-bold">Email</h4>
-                            <p>info@suruchidev.com.np</p>
-                        </div>
-                    </div>
-                    <div class="pt-6">
-                        <h4 class="font-bold mb-4">Follow My Work</h4>
-                        <div class="flex space-x-4">
-                            <a href="https://www.facebook.com/suuruchi.dev" class="text-blue-600 text-2xl hover:scale-110 transition"><i class="fab fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/suruchi.dev/" class="text-pink-600 text-2xl hover:scale-110 transition"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.tiktok.com/@suruchidev" class="text-black text-2xl hover:scale-110 transition"><i class="fab fa-tiktok"></i></a>
-                            <a href="https://www.linkedin.com/in/suruchi-dev/" class="text-blue-800 text-2xl hover:scale-110 transition"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
+            <h2 class="text-3xl font-bold mb-16">Visit Me At Our Centers</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-20">
+                <div class="p-6">
+                    <h4 class="font-bold text-xl mb-2">Axis Physiotherapy</h4>
+                    <p class="text-slate-500">Pulchowk, Lalitpur</p>
                 </div>
-                <!-- Contact Note -->
-                <div class="bg-blue-50 p-8 rounded-2xl text-left border border-blue-100">
-                    <h3 class="text-xl font-bold mb-4 text-blue-800">Booking a Home Visit?</h3>
-                    <p class="text-gray-600 mb-6">Please provide the patient's condition (Stroke, Spinal injury, etc.) and your location for a customized treatment plan.</p>
-                    <a href="mailto:info@suruchidev.com.np" class="block w-full text-center bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">Email Me Details</a>
+                <div class="p-6">
+                    <h4 class="font-bold text-xl mb-2">Silverline Hospital</h4>
+                    <p class="text-slate-500">Balaju, Kathmandu</p>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-xl mb-2">Karuna City Clinic</h4>
+                    <p class="text-slate-500">Nayabazaar, Kathmandu</p>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto glass border border-slate-200 p-10 rounded-3xl shadow-2xl">
+                <h3 class="text-2xl font-bold mb-6">Contact Suruchi Dev</h3>
+                <div class="flex flex-col gap-4">
+                    <a href="tel:+9779863201528" class="text-xl font-bold text-blue-600">+977 9863201528</a>
+                    <p class="text-slate-500">info@suruchidev.com.np</p>
+                    <div class="flex justify-center space-x-6 mt-6">
+                        <a href="https://www.facebook.com/suuruchi.dev" class="text-2xl text-slate-400 hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/suruchi.dev/" class="text-2xl text-slate-400 hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/suruchi-dev/" class="text-2xl text-slate-400 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.tiktok.com/@suruchidev" class="text-2xl text-slate-400 hover:text-black"><i class="fab fa-tiktok"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-100 py-10 border-t">
-        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
-            <p>&copy; 2023 Suruchi Dev. All rights reserved.</p>
-            <p class="mt-2">Registered with NHPC Nepal | Specialist Neurological Physical Therapy</p>
-        </div>
+    <footer class="py-10 text-center text-slate-400 text-sm border-t border-slate-100">
+        <p>© 2023 Suruchi Dev | NHPC A-1169 PHY | Axis Physiotherapy Pvt. Ltd.</p>
     </footer>
 
-    <!-- Redirect Script (Optional) -->
-    <!-- This script can redirect a user after 30 seconds or if a certain condition is met -->
-    <script>
-        // Example: If you want to redirect to Axis after 60 seconds
-        // setTimeout(function(){ window.location.href = "https://axisphysiotherapy.com.np/"; }, 60000);
-        
-        // Canonical Redirect Logic (Ensuring https and no-www)
-        if (window.location.protocol === 'http:') {
-            window.location.href = window.location.href.replace('http:', 'https:');
-        }
-    </script>
 </body>
 </html>
