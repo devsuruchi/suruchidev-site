@@ -28,19 +28,82 @@
 <body class="bg-slate-50 text-slate-900">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass border-b border-slate-200">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex flex-col">
-                <span class="text-xl font-bold tracking-tight text-blue-900 uppercase">Suruchi Dev</span>
-                <span class="text-xs font-semibold text-blue-600">MPT (Neurology) | Developer</span>
+    <!-- Top Navigation Bar -->
+<nav class="fixed w-full z-[100] top-0 left-0 bg-white/80 backdrop-blur-lg border-b border-slate-200 shadow-sm">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="flex items-center justify-between h-20">
+            
+            <!-- Logo Section -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform">
+                    <i class="fas fa-hand-holding-medical text-white text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-black text-slate-900 leading-none tracking-tighter uppercase">Suruchi<span class="text-blue-600">Dev</span></span>
+                    <span class="text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase mt-1">Neuro Physio & Tech</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu (Center) -->
+            <div class="hidden lg:flex items-center space-x-8 font-semibold text-slate-600 text-sm uppercase tracking-wider">
+                <a href="#physio" class="hover:text-blue-600 transition-colors">Physiotherapy</a>
+                <a href="#web" class="hover:text-blue-600 transition-colors">Web Design</a>
+                <a href="#contact" class="hover:text-blue-600 transition-colors">Clinics</a>
             </div>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="#physio" class="hover:text-blue-600 font-medium">Physiotherapy</a>
-                <a href="#web" class="hover:text-blue-600 font-medium">Web Design</a>
-                <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-700 transition">Book Now</a>
+
+            <!-- Action Buttons (Right) -->
+            <div class="flex items-center space-x-2 md:space-x-4">
+                <!-- Direct Call (Desktop Hidden, Mobile Visible as Icon) -->
+                <a href="tel:+9779863201528" class="p-3 bg-slate-100 text-slate-700 rounded-full hover:bg-blue-50 hover:text-blue-600 transition-all" title="Call Now">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+
+                <!-- WhatsApp Call Button (High Conversion) -->
+                <a href="https://wa.me/9779863201528" target="_blank" class="flex items-center space-x-2 bg-[#25D366] text-white px-4 py-2.5 rounded-full shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    <span class="hidden md:inline font-bold text-sm uppercase tracking-tight">WhatsApp Us</span>
+                </a>
+                
+                <!-- Mobile Menu Button (Hamburger) -->
+                <button class="lg:hidden p-2 text-slate-900" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
         </div>
-    </nav>
+    </div>
+
+    <!-- Mobile Dropdown Menu (Hidden by default) -->
+    <div class="lg:hidden hidden bg-white border-t border-slate-100 px-6 py-6 space-y-4 shadow-2xl" id="mobile-menu">
+        <a href="#physio" class="block text-lg font-bold text-slate-800">Physiotherapy Services</a>
+        <a href="#web" class="block text-lg font-bold text-slate-800">Affordable Web Design</a>
+        <a href="#contact" class="block text-lg font-bold text-slate-800">Contact & Clinics</a>
+        <div class="pt-4 flex flex-col gap-3">
+            <a href="tel:+9779863201528" class="flex items-center justify-center gap-2 bg-blue-600 text-white py-3 rounded-xl font-bold">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Padding helper to prevent content from going under the fixed nav -->
+<div class="h-20"></div>
+
+<!-- Mobile Menu Logic Script -->
+<script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+    
+    // Close menu when clicking a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+        });
+    });
+</script>
 
     <!-- Hero Section -->
     <section class="hero-bg pt-40 pb-20 px-6">
