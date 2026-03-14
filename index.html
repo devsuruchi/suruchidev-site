@@ -71,6 +71,8 @@
                 <a href="#physio" class="hover:text-blue-600 transition-colors">Medical Services</a>
                 <a href="#web" class="hover:text-blue-600 transition-colors">Web Design</a>
                 <a href="#contact" class="hover:text-blue-600 transition-colors">Clinics</a>
+                <!-- Update your Nav Menu inside the <ul> or <div> -->
+                <a href="#blog" class="hover:text-blue-600 transition-colors">Insights</a>
             </div>
 
             <!-- Action Buttons (Right) -->
@@ -267,6 +269,84 @@
             </div>
         </div>
     </section>
+    <!-- BLOG / INSIGHTS SECTION -->
+<section id="blog" class="py-24 bg-slate-50">
+    <div class="container mx-auto px-6">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+            <div class="max-w-2xl">
+                <span class="text-blue-600 font-bold tracking-widest uppercase text-sm italic">Knowledge Hub</span>
+                <h2 class="text-4xl font-bold mt-2">Latest Insights on <span class="gradient-text">Neuro-Health & Tech</span></h2>
+                <p class="text-slate-500 mt-4">Exploring the intersection of neurological recovery and digital innovation in Nepal.</p>
+            </div>
+            <div class="hidden md:block">
+                <a href="#contact" class="text-blue-600 font-bold border-b-2 border-blue-600 pb-1 hover:text-blue-800 transition">View All Articles →</a>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+            
+            <!-- Blog Card 1: Neuro & Data Science -->
+            <article class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group border border-slate-100">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Data Science in Rehab" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Neuro-Science</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="flex items-center text-slate-400 text-xs mb-4">
+                        <span><i class="far fa-calendar-alt mr-2"></i> October 2023</span>
+                        <span class="mx-3">•</span>
+                        <span><i class="far fa-clock mr-2"></i> 5 Min Read</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-blue-600 transition-colors leading-tight">Data-Driven Recovery: How Data Science is Revolutionizing Stroke Rehabilitation in Nepal</h3>
+                    <p class="text-slate-600 mb-6 line-clamp-3">
+                        In neurological rehabilitation, "progress" is often invisible. Using Python-based tools and data visualization, I help my patients track milestones in gait speed and muscle recovery...
+                    </p>
+                    <a href="javascript:void(0)" class="inline-flex items-center font-bold text-slate-900 group-hover:translate-x-2 transition-transform">
+                        Read Full Article <i class="fas fa-arrow-right ml-2 text-blue-600"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Blog Card 2: Web Design for Clinics -->
+            <article class="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group border border-slate-100">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Medical Web Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Digital Identity</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <div class="flex items-center text-slate-400 text-xs mb-4">
+                        <span><i class="far fa-calendar-alt mr-2"></i> October 2023</span>
+                        <span class="mx-3">•</span>
+                        <span><i class="far fa-clock mr-2"></i> 4 Min Read</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-blue-600 transition-colors leading-tight">The Digital Prescription: Why Every Clinic in Nepal Needs a Professional Website</h3>
+                    <p class="text-slate-600 mb-6 line-clamp-3">
+                        A Facebook page is not enough. To build trust in 2024, clinics must have a professional digital footprint that highlights their credentials, SEO, and NHPC registration...
+                    </p>
+                    <a href="javascript:void(0)" class="inline-flex items-center font-bold text-slate-900 group-hover:translate-x-2 transition-transform">
+                        Read Full Article <i class="fas fa-arrow-right ml-2 text-blue-600"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Small "Hire Me" Banner within Blog -->
+        <div class="mt-16 bg-blue-50 rounded-3xl p-8 border border-blue-100 flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left mb-6 md:mb-0">
+                <h4 class="text-xl font-bold text-blue-900">Want a custom website for your practice?</h4>
+                <p class="text-blue-700/70">I design SEO-optimized sites for doctors starting at very affordable rates.</p>
+            </div>
+            <a href="https://wa.me/9779863201528" class="bg-blue-600 text-white px-8 py-3 rounded-2xl font-bold shadow-lg hover:bg-blue-700 transition">Get Started</a>
+        </div>
+    </div>
+</section>
 
     <!-- Clinic & Contact Section -->
     <section id="contact" class="py-24 bg-white">
@@ -304,7 +384,7 @@
     </section>
 
     <footer class="py-10 text-center text-slate-400 text-sm border-t border-slate-100">
-        <p>© 2023 Suruchi Dev | NHPC A-1169 PHY | Axis Physiotherapy Pvt. Ltd.</p>
+        <p>© 2023 Dr. Suruchi Dev | NHPC A-1169 PHY | Axis Physiotherapy Pvt. Ltd.</p>
     </footer>
 
 </body>
