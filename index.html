@@ -271,63 +271,62 @@
             </div>
         </div>
     </section>
-    <!-- 1. GLOBAL CAREER & LICENSING SECTION -->
-<section id="global" class="py-24 bg-white relative overflow-hidden">
-    <div class="absolute top-0 right-0 opacity-[0.03] -z-10">
-        <i class="fas fa-globe-americas text-[40rem]"></i>
-    </div>
+    <!-- GLOBAL CAREER & LICENSING SECTION -->
+<section id="global" class="py-24 bg-slate-50 relative overflow-hidden">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-            <span class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">International Opportunities</span>
-            <h2 class="text-4xl font-bold mt-4">Global Licensing & <span class="text-indigo-600">Admission Guidance</span></h2>
-            <p class="text-slate-500 mt-4 max-w-2xl mx-auto italic">Helping healthcare professionals navigate the complex journey from Nepal to the World.</p>
+            <span class="bg-indigo-100 text-indigo-700 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">Global Career Mentorship</span>
+            <h2 class="text-4xl font-bold mt-4 italic">Start Your <span class="text-indigo-600">International Journey</span></h2>
+            <p class="text-slate-500 mt-4 max-w-2xl mx-auto italic">Professional licensing for Physiotherapists and University Admissions for all faculties.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 card-hover text-center">
-                <div class="text-4xl mb-4">🇬🇧</div>
-                <h3 class="font-bold text-xl mb-2">United Kingdom</h3>
-                <p class="text-sm text-blue-600 italic font-bold mb-4 tracking-tighter">HCPC Registration</p>
-                <p class="text-slate-600 text-sm">Step-by-step guidance for HCPC licensing and NHS career pathways.</p>
-            </div>
-            <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 card-hover text-center">
-                <div class="text-4xl mb-4">🇦🇺</div>
-                <h3 class="font-bold text-xl mb-2">Australia</h3>
-                <p class="text-sm text-blue-600 italic font-bold mb-4 tracking-tighter">APC / AHPRA</p>
-                <p class="text-slate-600 text-sm">Documentation support for the Australian Physiotherapy Council (APC) process.</p>
-            </div>
-            <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 card-hover text-center">
-                <div class="text-4xl mb-4">🇨🇦</div>
-                <h3 class="font-bold text-xl mb-2">Canada</h3>
-                <p class="text-sm text-blue-600 italic font-bold mb-4 tracking-tighter">CAPR Licensing</p>
-                <p class="text-slate-600 text-sm">Full support for credentialling (CAPR) and university admissions.</p>
-            </div>
-            <div class="p-8 border border-slate-100 rounded-3xl bg-slate-50 card-hover text-center">
-                <div class="text-4xl mb-4">🇮🇳</div>
-                <h3 class="font-bold text-xl mb-2">India</h3>
-                <p class="text-sm text-blue-600 italic font-bold mb-4 tracking-tighter">MPT Admissions</p>
-                <p class="text-slate-600 text-sm">Direct admission in top Indian medical colleges at affordable rates.</p>
-            </div>
+        <!-- Country Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            
+            <!-- UK Card -->
+            <button onclick="openApplyForm('United Kingdom')" class="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all border border-slate-100 group text-center">
+                <div class="text-6xl mb-6 group-hover:scale-110 transition-transform">🇬🇧</div>
+                <h3 class="font-bold text-lg">UK</h3>
+                <p class="text-[10px] text-indigo-500 font-bold uppercase tracking-widest mt-2">HCPC & Admissions</p>
+            </button>
+
+            <!-- Australia Card -->
+            <button onclick="openApplyForm('Australia')" class="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all border border-slate-100 group text-center">
+                <div class="text-6xl mb-6 group-hover:scale-110 transition-transform">🇦🇺</div>
+                <h3 class="font-bold text-lg">Australia</h3>
+                <p class="text-[10px] text-indigo-500 font-bold uppercase tracking-widest mt-2">APC & Admissions</p>
+            </button>
+
+            <!-- Canada Card -->
+            <button onclick="openApplyForm('Canada')" class="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all border border-slate-100 group text-center">
+                <div class="text-6xl mb-6 group-hover:scale-110 transition-transform">🇨🇦</div>
+                <h3 class="font-bold text-lg">Canada</h3>
+                <p class="text-[10px] text-indigo-500 font-bold uppercase tracking-widest mt-2">CAPR & Admissions</p>
+            </button>
+
+            <!-- India Card -->
+            <button onclick="openApplyForm('India')" class="bg-white p-8 rounded-[2.5rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all border border-slate-100 group text-center">
+                <div class="text-6xl mb-6 group-hover:scale-110 transition-transform">🇮🇳</div>
+                <h3 class="font-bold text-lg">India</h3>
+                <p class="text-[10px] text-indigo-500 font-bold uppercase tracking-widest mt-2">MPT & Bachelors</p>
+            </button>
+
+            <!-- Other Countries Card -->
+            <button onclick="openApplyForm('Other Countries')" class="bg-indigo-600 p-8 rounded-[2.5rem] shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all group text-center text-white">
+                <div class="text-6xl mb-6 group-hover:rotate-12 transition-transform text-white">🌍</div>
+                <h3 class="font-bold text-lg">Others</h3>
+                <p class="text-[10px] text-indigo-200 font-bold uppercase tracking-widest mt-2">USA, UAE & More</p>
+            </button>
         </div>
 
-        <div class="mt-12 bg-indigo-900 rounded-[2.5rem] p-8 md:p-12 text-white">
-            <div class="grid md:grid-cols-3 gap-8 items-center">
-                <div class="md:col-span-2">
-                    <h3 class="text-2xl font-bold mb-4">Professional Documentation Support</h3>
-                    <p class="text-indigo-200 mb-6">Navigating foreign licensing is stressful. I provide expert documentation verification and admission processing at affordable rates.</p>
-                    <div class="flex flex-wrap gap-4 text-sm font-bold">
-                        <span class="flex items-center"><i class="fas fa-check-circle text-emerald-400 mr-2"></i> Verified Credentials</span>
-                        <span class="flex items-center"><i class="fas fa-check-circle text-emerald-400 mr-2"></i> Cost-Effective</span>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <a href="https://wa.me/9779863201528" class="inline-block bg-white text-indigo-900 px-10 py-4 rounded-2xl font-black shadow-xl hover:bg-indigo-50 transition-all uppercase tracking-widest">Apply Now</a>
-                </div>
-            </div>
+        <div class="mt-16 text-center max-w-3xl mx-auto bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm">
+            <p class="text-slate-600 leading-relaxed italic">
+                "Currently specializing in <b>Physiotherapy Licensing (HCPC, APC, CAPR)</b>. However, my <b>University Admission Services</b> are open for all faculties (Nursing, Public Health, IT, Business, etc.) for both individual and dependant applicants."
+            </p>
         </div>
     </div>
 </section>
-
+    
 <!-- 2. BLOG / INSIGHTS SECTION -->
 <section id="blog" class="py-24 bg-slate-50">
     <div class="container mx-auto px-6">
