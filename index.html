@@ -458,10 +458,108 @@
         document.getElementById('blogModal').classList.add('hidden');
         document.body.style.overflow = 'auto';
     }
+    // Global Form Logic
+function openApplyForm(country) {
+    document.getElementById('applyModal').classList.remove('hidden');
+    document.getElementById('targetCountryDisplay').innerText = country;
+    document.getElementById('formTargetCountry').value = country;
+    document.body.style.overflow = 'hidden';
+}
+
+function closeApplyForm() {
+    document.getElementById('applyModal').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+function submitGlobalForm() {
+    // Get Form Data
+    const country = document.getElementById('formTargetCountry').value;
+    const name = document.getElementById('applicantName').value;
+    const ageSex = document.getElementById('applicantAgeSex').value;
+    const degree = document.getElementById('applicantDegree').value;
+    const visa = document.querySelector('radio[name="visaType"]:checked')?.value || "Individual";
+    const goal = document.getElementById('applicantGoal').value;
+
+    // Validation
+    if(!name || !ageSex) { alert("Please fill Name and Age/Sex"); return; }
+
+    // Create WhatsApp/Email Message String
+    const message = `*New Global Career Inquiry*%0A--------------------------%0A*Target Country:* ${country}%0A*Name:* ${name}%0A*Age/Sex:* ${ageSex}%0A*Degree:* ${degree}%0A*Type:* ${visa}%0A*Goal:* ${goal}`;
+
+    // Redirect to WhatsApp (You can change this to Email if preferred)
+    window.open(`https://wa.me/9779863201528?text=${message}`, '_blank');
+    
+    // Close Modal after submission
+    closeApplyForm();
+}
 </script>
     <footer class="py-10 text-center text-slate-400 text-sm border-t border-slate-100">
         <p>© 2023 Dr. Suruchi Dev | NHPC A-1169 PHY | Axis Physiotherapy Pvt. Ltd.</p>
     </footer>
 
 </body>
+    <!-- GLOBAL APPLICATION FORM MODAL -->
+<div id="applyModal" class="fixed inset-0 z-[300] hidden bg-indigo-900/90 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-white w-full max-w-xl rounded-[2.5rem] shadow-2xl overflow-hidden relative animate-fade-in">
+        
+        <!-- Header -->
+        <div class="bg-indigo-600 p-8 text-white">
+            <button onclick="closeApplyForm()" class="absolute top-6 right-6 text-white/50 hover:text-white transition">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <h3 class="text-2xl font-bold italic">Global Career Assessment</h3>
+            <p class="text-indigo-100 text-sm mt-2">Applying for: <span id="targetCountryDisplay" class="font-bold text-yellow-400 underline"></span></p>
+        </div>
+
+        <!-- Form Body -->
+        <form id="consultancyForm" class="p-8 space-y-4 max-h-[70vh] overflow-y-auto">
+            <input type="hidden" id="formTargetCountry">
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Full Name</label>
+                    <input type="text" required id="applicantName" placeholder="Enter Name" class="w-full bg-slate-50 border border-slate-200 p-3 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Age / Sex</label>
+                    <input type="text" required id="applicantAgeSex" placeholder="Ex: 26/M" class="w-full bg-slate-50 border border-slate-200 p-3 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Current Degree Status</label>
+                <select id="applicantDegree" class="w-full bg-slate-50 border border-slate-200 p-3 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none">
+                    <option>BPT (Physiotherapy)</option>
+                    <option>MPT (Physiotherapy)</option>
+                    <option>Nursing (PCL/B.Sc)</option>
+                    <option>Other Medical Faculty</option>
+                    <option>Non-Medical Faculty</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Application Type</label>
+                <div class="flex gap-4 mt-2">
+                    <label class="flex items-center space-x-2 cursor-pointer">
+                        <input type="radio" name="visaType" value="Individual" checked class="w-4 h-4 text-indigo-600">
+                        <span class="text-sm font-medium">Individual</span>
+                    </label>
+                    <label class="flex items-center space-x-2 cursor-pointer">
+                        <input type="radio" name="visaType" value="With Dependant" class="w-4 h-4 text-indigo-600">
+                        <span class="text-sm font-medium">With Dependant</span>
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase mb-1">What are you applying for?</label>
+                <textarea id="applicantGoal" rows="3" placeholder="Ex: MPT Admission or HCPC Licensing documentation" class="w-full bg-slate-50 border border-slate-200 p-3 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none"></textarea>
+            </div>
+
+            <button type="button" onclick="submitGlobalForm()" class="w-full bg-indigo-600 text-white font-black py-4 rounded-2xl shadow-xl hover:bg-indigo-700 transition-all uppercase tracking-widest">
+                Submit Assessment
+            </button>
+        </form>
+    </div>
+</div>
 </html>
