@@ -1,6 +1,13 @@
-# Robots.txt for Axis Physiotherapy - Dr. Suruchi Dev
+# User-agent: * means this rule applies to all search engines (Google, Bing, etc.)
 User-agent: *
 Allow: /
 
-# Sitemaps tell search engines where all your pages are
-Sitemap: https://yourdomain.com/sitemap.xml
+# Block access to any private or temporary folders (if you add them later)
+Disallow: /cgi-bin/
+Disallow: /private/
+
+# Link to your Sitemap to help bots index your Neuro-Physio, Web Design, and Global Career sections
+Sitemap: https://suruchidev.com.np/sitemap.xml
+
+# Host directive for search engines
+Host: https://suruchidev.com.np
