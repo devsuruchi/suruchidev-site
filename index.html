@@ -310,6 +310,11 @@
                     <div><input type="text" id="applicantName" placeholder="Full Name*" required class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl focus:border-blue-600 outline-none font-bold text-sm"></div>
                     <div><input type="text" id="applicantAgeSex" placeholder="Age / Sex*" required class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl focus:border-blue-600 outline-none font-bold text-sm"></div>
                 </div>
+                <!-- Inside the Form, after the Age/Sex row -->
+<div>
+    <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 italic">Phone / WhatsApp Number*</label>
+    <input type="tel" id="applicantPhone" placeholder="Include Country Code (e.g., +977)" required class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl focus:border-blue-600 outline-none transition font-bold text-sm">
+</div>
                 <select id="applicantDegree" onchange="toggleOtherDegree()" class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl outline-none font-bold text-sm">
                     <option value="BPT (Physiotherapy)">BPT (Physiotherapy)</option>
                     <option value="MPT (Physiotherapy)">MPT (Physiotherapy)</option>
@@ -361,41 +366,55 @@
 
         async function submitGlobalForm() {
     const btn = document.getElementById('submitBtn');
+    
+    // 1. Collect Data
     const country = document.getElementById('formTargetCountry').value;
     const name = document.getElementById('applicantName').value;
     const ageSex = document.getElementById('applicantAgeSex').value;
+    const phone = document.getElementById('applicantPhone').value; // NEW FIELD
     const intake = document.getElementById('applicantIntake').value;
     const visa = document.querySelector('input[name="visaType"]:checked').value;
+    
     let degree = document.getElementById('applicantDegree').value;
-    if(degree === 'Other') degree = document.getElementById('otherDegreeText').value;
+    if(degree === 'Other') {
+        degree = document.getElementById('otherDegreeText').value;
+    }
 
-    if(!name || !ageSex) { alert("Please complete name and age."); return; }
+    // 2. Validation
+    if(!name || !ageSex || !phone) { 
+        alert("Please complete Name, Age, and Contact Number."); 
+        return; 
+    }
 
-    btn.innerText = "SENDING...";
+    // 3. UI Feedback
+    btn.innerText = "SENDING ASSESSMENT...";
     btn.disabled = true;
 
+    // 4. Send Email via EmailJS
+    // IMPORTANT: Add {{contact_number}} to your EmailJS Template online
     const emailParams = {
         target_country: country,
         applicant_name: name,
         age_sex: ageSex,
+        contact_number: phone, // NEW KEY
         qualification: degree,
         intake_cycle: intake,
         application_status: visa
     };
 
-    // DEBUGGING ALERT:
-    emailjs.send('service_j6hutnk', 'template_a097hxd', emailParams)
-        .then(function(response) {
-           console.log('SUCCESS!', response.status, response.text);
-           // If it reaches here, the email was sent!
-        }, function(error) {
-           console.log('FAILED...', error);
-           alert("Email Error: " + JSON.stringify(error)); // This will tell us the exact error
-        });
+    try {
+        await emailjs.send('service_j6hutnk', 'template_a097hxd', emailParams);
+        console.log('Email sent successfully');
+    } catch (error) {
+        console.error('EmailJS Error:', error);
+    }
 
-    const msg = `*GLOBAL CAREER ASSESSMENT*%0A*Target:* ${country}%0A*Name:* ${name}%0A*Age/Sex:* ${ageSex}%0A*Qualification:* ${degree}%0A*Intake:* ${intake}%0A*Type:* ${visa}`;
+    // 5. Open WhatsApp Redirect
+    const msg = `*GLOBAL CAREER ASSESSMENT*%0A--------------------------%0A*Target:* ${country}%0A*Name:* ${name}%0A*Age/Sex:* ${ageSex}%0A*Phone:* ${phone}%0A*Qualification:* ${degree}%0A*Intake:* ${intake}%0A*Type:* ${visa}`;
+    
     window.open(`https://wa.me/9779863201528?text=${msg}`, '_blank');
 
+    // 6. Reset & Close
     btn.innerText = "SUBMIT ASSESSMENT";
     btn.disabled = false;
     closeApplyForm();
