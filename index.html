@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO TITLE: Hits all 3 Keywords -->
-    <title>Dr. Suruchi Dev | Neuro Physiotherapy Home Visits & Global Career Licensing Nepal</title>
-    
-    <!-- SEO META DESCRIPTION -->
-    <meta name="description" content="Dr. Suruchi Dev (MPT Neurology) - Expert Neuro Physiotherapy home visits in Kathmandu & Lalitpur. Specialized HCPC UK, APC Australia, & CAPR Canada licensing for physios. Affordable web design for doctors in Nepal.">
-    
-    <!-- KEYWORDS -->
-    <meta name="keywords" content="Physiotherapy home visit Kathmandu, Neuro physiotherapist Lalitpur, HCPC UK licensing Nepal, APC Australia physiotherapy documentation, MPT admission India, affordable web design for doctors Nepal, Axis Physiotherapy Pulchowk, paralysis treatment at home Nepal">
+    <!-- SEO STRATEGY -->
+    <title>Dr. Suruchi Dev | Neuro Physio Home Visits & Global Career Licensing Nepal</title>
+    <meta name="description" content="Dr. Suruchi Dev (MPT Neurology) - Specialist in Neurological Physiotherapy Home Visits, International Licensing (UK HCPC, Australia APC, Canada CAPR), and Medical Web Design.">
+    <meta name="keywords" content="Physiotherapy home visit Kathmandu, Neuro physiotherapist Nepal, HCPC UK licensing for physios, APC Australia documentation, CAPR Canada process, MPT admission India, affordable medical web design Nepal, Axis Physiotherapy Pulchowk">
 
-    <!-- Schema.org JSON-LD (This makes you rank for 'Local Business' and 'Professional Service') -->
+    <!-- Schema.org JSON-LD (Search Engine Authority) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -31,29 +27,28 @@
         "postalCode": "44700",
         "addressCountry": "NP"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 27.6775,
-        "longitude": 85.3168
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "07:00",
-        "closes": "20:00"
-      },
       "sameAs": [
         "https://www.facebook.com/suuruchi.dev",
         "https://www.linkedin.com/in/suruchi-dev/",
-        "https://www.instagram.com/suruchi.dev/"
+        "https://www.instagram.com/suruchi.dev/",
+        "https://www.tiktok.com/@suruchidev"
       ]
     }
     </script>
 
-    <!-- Google Fonts & Tailwind -->
+    <!-- Premium Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:italic,wght@0,400;1,400&family=Inter:wght@300;400;600;800&family=Mukta:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- EmailJS SDK Integration -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          // Your Public Key
+          emailjs.init("hDBmHzPQeEC10nnja");
+       })();
+    </script>
 
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
@@ -62,12 +57,15 @@
         .hero-bg { background: linear-gradient(120deg, #f8fafc 0%, #e0f2fe 100%); }
         .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(15px); }
         .gradient-text { background: linear-gradient(135deg, #1e3a8a, #4338ca); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.4s ease; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1); }
+        .modal-animate { animation: slideIn 0.3s ease-out; }
+        @keyframes slideIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
     </style>
 </head>
-</head>
+
 <body class="bg-slate-50 text-slate-900 leading-relaxed">
 
-    <!-- HEADER -->
+    <!-- HEADER & NAVIGATION -->
     <header class="fixed w-full z-[100] top-0 shadow-sm">
         <div class="bg-slate-900 text-white py-2 px-4 md:px-8 hidden sm:block">
             <div class="container mx-auto flex justify-between items-center text-[11px] font-bold uppercase tracking-widest">
@@ -76,7 +74,7 @@
                     <span><i class="fas fa-certificate mr-2 text-blue-400"></i>NHPC: A-1169 PHY</span>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <a href="tel:+9779863201528" class="hover:text-blue-400 font-bold"><i class="fas fa-phone-alt mr-2"></i>+977 9863201528</a>
+                    <a href="tel:+9779818649947" class="hover:text-blue-400 transition"><i class="fas fa-phone-alt mr-2 text-blue-400"></i>+977 9818649947</a>
                 </div>
             </div>
         </div>
@@ -84,26 +82,25 @@
         <nav class="bg-white/90 backdrop-blur-md border-b border-slate-100 py-4 px-4 md:px-8">
             <div class="container mx-auto flex items-center justify-between">
                 <a href="#" class="flex items-center space-x-3 group">
-                    <div class="w-12 h-12 bg-gradient-to-br from-blue-700 to-indigo-800 rounded-2xl flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform">
+                    <div class="w-12 h-12 bg-blue-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform">
                         <i class="fas fa-globe text-white text-xl"></i>
                     </div>
-                    <div class="flex flex-col">
-                        <span class="text-2xl font-black text-slate-900 leading-none italic uppercase">Suruchi<span class="text-blue-600">Dev</span></span>
-                        <span class="text-[9px] font-extrabold text-slate-400 tracking-[0.3em] uppercase mt-1">Health & Career Excellence</span>
+                    <div class="flex flex-col text-slate-900 leading-none">
+                        <span class="text-2xl font-black italic uppercase">Suruchi<span class="text-blue-600">Dev</span></span>
+                        <span class="text-[9px] font-bold text-slate-400 tracking-[0.2em] uppercase mt-1">Neuro Physio & Tech</span>
                     </div>
                 </a>
 
                 <div class="hidden lg:flex items-center space-x-8 font-bold text-slate-600 text-[12px] uppercase tracking-widest">
-                    <a href="#physio" class="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600">Home Rehab</a>
-                    <a href="#global" class="hover:text-indigo-600 transition-colors border-b-2 border-transparent hover:border-indigo-600">Global Career</a>
-                    <a href="#web" class="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600">Web Design</a>
-                    <a href="#blog" class="hover:text-blue-600 transition-colors border-b-2 border-transparent hover:border-blue-600">Insights</a>
+                    <a href="#physio" class="hover:text-blue-600 transition">Home Rehab</a>
+                    <a href="#global" class="hover:text-indigo-600 transition">Global Career</a>
+                    <a href="#web" class="hover:text-blue-600 transition">Web Design</a>
+                    <a href="#blog" class="hover:text-blue-600 transition">Insights</a>
                 </div>
 
                 <div class="flex items-center space-x-4">
-                    <a href="https://wa.me/9779863201528" target="_blank" class="hidden md:flex items-center space-x-2 bg-[#25D366] text-white px-6 py-3 rounded-full shadow-lg hover:shadow-green-200 transition-all font-bold text-xs uppercase tracking-tighter">
-                        <i class="fab fa-whatsapp text-lg"></i>
-                        <span>Contact Expert</span>
+                    <a href="https://wa.me/9779863201528" target="_blank" class="hidden md:flex items-center space-x-2 bg-[#25D366] text-white px-6 py-3 rounded-full shadow-lg hover:shadow-green-200 transition-all font-bold text-xs uppercase">
+                        <i class="fab fa-whatsapp text-lg"></i><span>WhatsApp Expert</span>
                     </a>
                     <button class="lg:hidden p-2 text-slate-900" id="mobile-menu-btn"><i class="fas fa-bars text-2xl"></i></button>
                 </div>
@@ -111,454 +108,240 @@
         </nav>
     </header>
 
-    <div class="h-24 md:h-32"></div>
+    <div class="h-20 md:h-32"></div>
 
-    <!-- NEW PREMIUM HERO SECTION -->
-<section class="hero-bg pt-24 pb-32 px-6 overflow-hidden">
-    <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
-        
-        <!-- Left Content -->
-        <div class="z-10">
-            <div class="flex items-center space-x-3 mb-6">
-                <span class="h-[1px] w-10 bg-blue-600"></span>
-                <span class="text-blue-600 font-bold uppercase tracking-[0.3em] text-[10px]">Licensed MPT (Neurology) • Tech Expert</span>
-            </div>
-            <h1 class="hero-caption text-5xl md:text-7xl font-normal text-slate-900 mb-8">
-    Specialist <span class="italic text-blue-700">Home Rehab.</span><br>
-    Global <span class="italic text-indigo-700">Career Consultant.</span>
-</h1>
-<p class="text-lg text-slate-600 mb-12 leading-relaxed max-w-lg font-light">
-    Providing expert <b>Neurological Physiotherapy Home Visits</b> in Kathmandu & Lalitpur. Specialized in <b>International Licensing (UK, Australia, Canada)</b> and University Admissions for all healthcare faculties.
-</p>
-            
-            <div class="flex flex-wrap gap-5">
-                <a href="#global" class="bg-indigo-700 text-white px-10 py-5 rounded-full font-semibold cta-shadow hover:bg-indigo-800 transition-all transform hover:-translate-y-1">
-                    Global Licensing <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                </a>
-                <a href="tel:+9779863201528" class="bg-white border border-slate-200 text-slate-900 px-10 py-5 rounded-full font-semibold hover:bg-slate-50 transition-all flex items-center">
-                    <i class="fas fa-phone-alt mr-3 text-blue-600"></i> Book Home Visit
-                </a>
-            </div>
-
-            <!-- Trust Badges -->
-            <div class="mt-16 flex items-center space-x-8 opacity-60">
-                <div class="text-center">
-                    <p class="font-bold text-slate-900 text-xl">NHPC</p>
-                    <p class="text-[9px] uppercase font-black tracking-widest">A-1169 PHY</p>
+    <!-- ELITE HERO SECTION -->
+    <section class="hero-bg pt-24 pb-32 px-6 overflow-hidden">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="z-10">
+                <div class="flex items-center space-x-3 mb-6">
+                    <span class="h-[1px] w-10 bg-blue-600"></span>
+                    <span class="text-blue-600 font-bold uppercase tracking-[0.3em] text-[10px]">Licensed MPT (Neurology) • Tech Consultant</span>
                 </div>
-                <div class="h-8 w-[1px] bg-slate-300"></div>
-                <div class="text-center text-slate-900">
-                    <p class="font-bold text-xl uppercase tracking-tighter">HCPC • APC</p>
-                    <p class="text-[9px] uppercase font-black tracking-widest">Global Standards</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Visual -->
-        <div class="relative group">
-            <div class="absolute -top-10 -right-10 w-64 h-64 bg-blue-200/50 rounded-full blur-3xl -z-10 group-hover:bg-indigo-200 transition-colors"></div>
-            <div class="relative">
-                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=80" 
-                     alt="Dr. Suruchi Dev Rehabilitation" 
-                     class="image-frame w-full h-[600px] object-cover border-[16px] border-white shadow-2xl">
-                
-                <!-- Floating Info Card -->
-                <div class="absolute -bottom-6 -left-10 glass p-8 rounded-[2rem] shadow-2xl border border-white/50 max-w-xs animate-fade-in">
-                    <div class="flex items-center space-x-4 mb-3">
-                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <p class="font-bold text-slate-800 leading-tight">Expert Verified Care</p>
-                    </div>
-                    <p class="text-sm text-slate-500 font-medium">Focused on Stroke, Paralysis, and Clinical Career Excellence.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- PHYSIOTHERAPY HOME VISIT: SEO OPTIMIZED -->
-<section id="physio" class="py-32 bg-white">
-    <div class="container mx-auto px-6">
-        
-        <!-- Section Header -->
-        <div class="text-center max-w-4xl mx-auto mb-20">
-            <span class="text-blue-600 font-black uppercase tracking-widest text-[10px] mb-4 block">Clinical Home Services</span>
-            <h2 class="text-5xl md:text-6xl font-black mb-6 italic uppercase tracking-tighter">
-                Physiotherapy <span class="text-blue-600">Home Visits</span> Kathmandu & Lalitpur
-            </h2>
-            <p class="text-slate-500 nepali-font text-2xl font-bold mb-6 italic">
-                दक्ष फिजियोथेरापिस्ट र मसाज थेरापिस्टद्वारा घरमै गुणस्तरीय सेवा
-            </p>
-            <p class="text-slate-600 max-w-2xl mx-auto font-medium">
-                Skip the commute. Receive <b>Specialized Neurological & Orthopedic Rehabilitation</b> from NHPC licensed experts and certified massage therapists in the comfort of your home.
-            </p>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-            
-            <!-- Card 1: Neuro Specialist (SEO: Stroke Rehab Kathmandu) -->
-            <div class="group p-10 border border-slate-100 rounded-[3rem] bg-slate-50 card-hover transition-all border-b-8 border-b-blue-600">
-                <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:rotate-12 transition-transform">
-                    <i class="fas fa-brain text-2xl"></i>
-                </div>
-                <h3 class="text-2xl font-black mb-2 uppercase italic tracking-tighter">Neuro Rehab & Stroke</h3>
-                <p class="text-blue-600 font-bold nepali-font mb-4 italic text-lg">पक्षघात (प्यारालाइसिस) पुनर्स्थापना</p>
-                <ul class="text-slate-500 text-sm space-y-2 mb-6">
-                    <li><i class="fas fa-check text-blue-600 mr-2"></i> Stroke / Paralysis Recovery</li>
-                    <li><i class="fas fa-check text-blue-600 mr-2"></i> Spinal Cord Injury Rehab</li>
-                    <li><i class="fas fa-check text-blue-600 mr-2"></i> Parkinson’s Management</li>
-                </ul>
-                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">By Licensed MPT/BPT</p>
-            </div>
-
-            <!-- Card 2: Ortho/Sports (SEO: Post Surgery Physio Nepal) -->
-            <div class="group p-10 border border-slate-100 rounded-[3rem] bg-slate-50 card-hover transition-all border-b-8 border-b-emerald-600">
-                <div class="w-16 h-16 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:rotate-12 transition-transform">
-                    <i class="fas fa-bone text-2xl"></i>
-                </div>
-                <h3 class="text-2xl font-black mb-2 uppercase italic tracking-tighter">Orthopedic & Sports</h3>
-                <p class="text-emerald-600 font-bold nepali-font mb-4 italic text-lg">शल्यक्रिया पछिको फिजियोथेरापी</p>
-                <ul class="text-slate-500 text-sm space-y-2 mb-6">
-                    <li><i class="fas fa-check text-emerald-600 mr-2"></i> Post-Surgery (ACL/Hip/Knee)</li>
-                    <li><i class="fas fa-check text-emerald-600 mr-2"></i> Back & Neck Pain Relief</li>
-                    <li><i class="fas fa-check text-emerald-600 mr-2"></i> Ligament & Sports Injuries</li>
-                </ul>
-                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">By Licensed Physiotherapist</p>
-            </div>
-
-            <!-- Card 3: Massage Therapy (SEO: Professional Massage Kathmandu) -->
-            <div class="group p-10 border border-slate-100 rounded-[3rem] bg-slate-50 card-hover transition-all border-b-8 border-b-orange-500">
-                <div class="w-16 h-16 bg-orange-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:rotate-12 transition-transform">
-                    <i class="fas fa-spa text-2xl"></i>
-                </div>
-                <h3 class="text-2xl font-black mb-2 uppercase italic tracking-tighter">Massage Therapy</h3>
-                <p class="text-orange-600 font-bold nepali-font mb-4 italic text-lg">प्रोफेशनल मसाज सेवा</p>
-                <ul class="text-slate-500 text-sm space-y-2 mb-6">
-                    <li><i class="fas fa-check text-orange-600 mr-2"></i> Therapeutic Deep Tissue</li>
-                    <li><i class="fas fa-check text-orange-600 mr-2"></i> Post-Injury Relaxation</li>
-                    <li><i class="fas fa-check text-orange-600 mr-2"></i> Circulation & Stress Relief</li>
-                </ul>
-                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">By Certified Massage Therapist</p>
-            </div>
-
-        </div>
-
-        <!-- SEO Keyword Footer for Section -->
-        <div class="mt-16 pt-10 border-t border-slate-100 grid md:grid-cols-2 gap-8 items-center">
-            <p class="text-slate-400 text-xs italic leading-relaxed">
-                Keywords: Best home visit physiotherapy Kathmandu, Paralysis treatment at home Nepal, Axis Physiotherapy home care services, Licensed Neuro Physio Lalitpur, Affordable home exercise plans for elderly.
-            </p>
-            <div class="flex md:justify-end">
-                <a href="tel:+9779863201528" class="bg-blue-600 text-white px-8 py-4 rounded-2xl font-bold shadow-xl hover:bg-blue-700 transition flex items-center">
-                    <i class="fas fa-calendar-check mr-2"></i> Request Home Session
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- GLOBAL CAREER & LICENSING: ELITE CONSULTANCY -->
-<section id="global" class="py-32 bg-slate-950 text-white relative overflow-hidden">
-    <!-- Sophisticated Background Element -->
-    <div class="absolute top-0 right-0 opacity-[0.03] pointer-events-none">
-        <i class="fas fa-globe-europe text-[50rem] -translate-y-20 translate-x-20"></i>
-    </div>
-
-    <div class="container mx-auto px-6 relative z-10">
-        <!-- Header -->
-        <div class="text-center mb-24">
-            <span class="text-blue-500 font-bold uppercase tracking-[0.4em] text-[10px] mb-4 block">World-Class Documentation Specialist</span>
-            <h2 class="text-5xl md:text-7xl font-normal mb-8 italic serif leading-tight">
-                Global Licensing & <br><span class="text-blue-400">Career Pathways.</span>
-            </h2>
-            <p class="text-slate-400 mt-6 max-w-3xl mx-auto text-lg font-light leading-relaxed">
-                Expert **documentation support** for healthcare professionals seeking international registration. We provide cost-effective **University Admissions** across all faculties with full support for **Individual and Dependant** applicants.
-            </p>
-        </div>
-
-        <!-- Country Portals: Large Impact Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            
-            <!-- UK Portal -->
-            <button onclick="openApplyForm('United Kingdom')" class="group bg-slate-900/50 p-12 rounded-[3.5rem] border border-slate-800 hover:border-blue-500 hover:bg-slate-900 transition-all duration-500 text-center shadow-2xl">
-                <div class="text-7xl mb-8 transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-lg">🇬🇧</div>
-                <h3 class="font-bold text-xl uppercase tracking-widest mb-2 serif italic">UK</h3>
-                <p class="text-[9px] text-blue-400 font-black uppercase tracking-[0.2em]">HCPC Registration</p>
-            </button>
-
-            <!-- Australia Portal -->
-            <button onclick="openApplyForm('Australia')" class="group bg-slate-900/50 p-12 rounded-[3.5rem] border border-slate-800 hover:border-blue-500 hover:bg-slate-900 transition-all duration-500 text-center shadow-2xl">
-                <div class="text-7xl mb-8 transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-lg">🇦🇺</div>
-                <h3 class="font-bold text-xl uppercase tracking-widest mb-2 serif italic">Australia</h3>
-                <p class="text-[9px] text-blue-400 font-black uppercase tracking-[0.2em]">APC Documentation</p>
-            </button>
-
-            <!-- Canada Portal -->
-            <button onclick="openApplyForm('Canada')" class="group bg-slate-900/50 p-12 rounded-[3.5rem] border border-slate-800 hover:border-blue-500 hover:bg-slate-900 transition-all duration-500 text-center shadow-2xl">
-                <div class="text-7xl mb-8 transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-lg">🇨🇦</div>
-                <h3 class="font-bold text-xl uppercase tracking-widest mb-2 serif italic">Canada</h3>
-                <p class="text-[9px] text-blue-400 font-black uppercase tracking-[0.2em]">CAPR Credentialing</p>
-            </button>
-
-            <!-- India Portal -->
-            <button onclick="openApplyForm('India')" class="group bg-slate-900/50 p-12 rounded-[3.5rem] border border-slate-800 hover:border-blue-500 hover:bg-slate-900 transition-all duration-500 text-center shadow-2xl">
-                <div class="text-7xl mb-8 transform group-hover:scale-110 transition-transform duration-500 filter drop-shadow-lg">🇮🇳</div>
-                <h3 class="font-bold text-xl uppercase tracking-widest mb-2 serif italic">India</h3>
-                <p class="text-[9px] text-blue-400 font-black uppercase tracking-[0.2em]">Direct Admissions</p>
-            </button>
-
-            <!-- Worldwide Portal -->
-            <button onclick="openApplyForm('Other Global Destinations')" class="group bg-gradient-to-br from-blue-700 to-indigo-900 p-12 rounded-[3.5rem] hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-500 text-center shadow-2xl border border-white/10">
-                <div class="text-7xl mb-8 transform group-hover:rotate-12 transition-transform duration-500 text-white">🌍</div>
-                <h3 class="font-bold text-xl uppercase tracking-widest mb-2 serif italic text-white">Global</h3>
-                <p class="text-[9px] text-blue-100 font-black uppercase tracking-[0.2em]">USA, UAE & More</p>
-            </button>
-        </div>
-
-        <!-- Professional Value Box: SEO Keyword Rich -->
-        <div class="mt-24 grid lg:grid-cols-2 gap-12 items-center bg-white/5 backdrop-blur-md rounded-[4rem] p-12 md:p-20 border border-white/10 shadow-inner">
-            <div>
-                <h4 class="text-3xl font-normal serif italic mb-6 text-white">Why Professionals Choose Our Mentorship?</h4>
-                <p class="text-slate-400 leading-relaxed mb-8">
-                    We bridge the gap between your local clinical experience and international registration standards. Our mission is to provide <b>affordable licensing documentation</b> and <b>seamless university admissions</b> for healthcare workers globally.
+                <h1 class="text-6xl md:text-8xl font-normal text-slate-900 mb-8 leading-tight serif">
+                    Precision <span class="italic text-blue-700">Rehab.</span><br>
+                    Global <span class="italic text-indigo-700">Careers.</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-12 leading-relaxed max-w-lg font-light italic text-slate-500">
+                    Certified <b>Neuro-Physiotherapy</b> home visits in Kathmandu & expert <b>Documentation/Admissions</b> for healthcare careers in UK, Australia, & Canada.
                 </p>
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="flex items-center space-x-3">
-                        <i class="fas fa-check-circle text-blue-500"></i>
-                        <span class="text-xs font-bold uppercase tracking-widest text-slate-300">HCPC / APC / CAPR Experts</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <i class="fas fa-check-circle text-blue-500"></i>
-                        <span class="text-xs font-bold uppercase tracking-widest text-slate-300">Dependant Documentation</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <i class="fas fa-check-circle text-blue-500"></i>
-                        <span class="text-xs font-bold uppercase tracking-widest text-slate-300">Verified Credentials</span>
-                    </div>
-                    <div class="flex items-center space-x-3">
-                        <i class="fas fa-check-circle text-blue-500"></i>
-                        <span class="text-xs font-bold uppercase tracking-widest text-slate-300">Global Admissions</span>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center lg:text-right">
-                <button onclick="openApplyForm('General Global Inquiry')" class="inline-block bg-blue-600 text-white px-12 py-6 rounded-full font-bold shadow-2xl hover:bg-blue-500 transition-all transform hover:scale-105 uppercase tracking-widest text-xs">
-                    Start Your Assessment <i class="fas fa-arrow-right ml-3"></i>
-                </button>
-            </div>
-        </div>
-        
-        <!-- Section Keywords (Invisible to users, visible to Google) -->
-        <div class="mt-12 opacity-0 h-0 overflow-hidden">
-            Keywords: Physiotherapy licensing for UK HCPC, APC Australia documentation help, CAPR Canada physiotherapy, Dependant admission UK Australia, Affordable MPT admissions India.
-        </div>
-    </div>
-</section>
-    
-    <!-- WEB DESIGN & TECH: THE DIGITAL PRESCRIPTION -->
-<section id="web" class="py-32 bg-white">
-    <div class="container mx-auto px-6">
-        <div class="bg-slate-900 rounded-[4rem] p-10 md:p-20 text-white shadow-2xl overflow-hidden relative border border-white/5">
-            
-            <!-- Background Decorative Element -->
-            <div class="absolute -bottom-20 -right-20 opacity-10 pointer-events-none">
-                <i class="fas fa-code text-[30rem]"></i>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-16 items-center relative z-10">
-                <div>
-                    <span class="text-blue-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-4 block">Healthcare Meets Innovation</span>
-                    <h2 class="text-5xl md:text-6xl font-normal mb-8 italic serif leading-tight">
-                        The Digital <br><span class="text-blue-500 underline decoration-blue-500/30">Prescription.</span>
-                    </h2>
-                    <p class="text-slate-400 mb-10 text-lg font-light leading-relaxed italic">
-                        As a clinician and developer, I build high-performance digital identities. I don't just design websites; I optimize them for **Medical SEO** and **Patient Conversion.**
-                    </p>
-                    
-                    <!-- Tech Stack Icons -->
-                    <div class="flex space-x-6 mb-12 opacity-70">
-                        <i class="fab fa-python text-3xl" title="Python & Data Science"></i>
-                        <i class="fab fa-html5 text-3xl" title="HTML5"></i>
-                        <i class="fab fa-css3-alt text-3xl" title="Tailwind CSS"></i>
-                        <i class="fas fa-search-dollar text-3xl" title="Medical SEO"></i>
-                    </div>
-
-                    <!-- Portfolio Links -->
-                    <div class="space-y-4">
-                        <p class="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-4">Selected Portfolio</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <a href="https://axisphysiotherapy.com.np/" target="_blank" class="group flex items-center justify-between bg-white/5 border border-white/10 p-5 rounded-2xl hover:bg-white hover:text-black transition-all duration-500">
-                                <span class="font-bold text-sm">Axis Physio</span>
-                                <i class="fas fa-external-link-alt text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                            </a>
-                            <a href="https://wellness-adobe.com/" target="_blank" class="group flex items-center justify-between bg-white/5 border border-white/10 p-5 rounded-2xl hover:bg-white hover:text-black transition-all duration-500">
-                                <span class="font-bold text-sm">Wellness Adobe</span>
-                                <i class="fas fa-external-link-alt text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                            </a>
-                            <a href="https://physiotherapy-near-me-nu.vercel.app/" target="_blank" class="group flex items-center justify-between bg-white/5 border border-white/10 p-5 rounded-2xl hover:bg-white hover:text-black transition-all duration-500">
-                                <span class="font-bold text-sm">Physio Near Me</span>
-                                <i class="fas fa-external-link-alt text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                            </a>
-                            <a href="#" class="group flex items-center justify-between bg-white/5 border border-white/10 p-5 rounded-2xl hover:bg-white hover:text-black transition-all duration-500">
-                                <span class="font-bold text-sm">Suruchi Dev</span>
-                                <i class="fas fa-external-link-alt text-xs opacity-0 group-hover:opacity-100 transition-opacity"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pricing/Value Card -->
-                <div class="bg-white/5 backdrop-blur-xl p-12 rounded-[3.5rem] border border-white/10 shadow-2xl text-center lg:text-left">
-                    <div class="mb-10">
-                        <h4 class="text-2xl font-normal serif italic mb-4 text-white">Clinical Launch Package</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed">Everything you need to take your clinic or professional portfolio online without the agency price tag.</p>
-                    </div>
-
-                    <ul class="space-y-5 mb-12">
-                        <li class="flex items-center space-x-4 text-sm font-medium">
-                            <i class="fas fa-check-circle text-blue-500"></i>
-                            <span>Domain, Hosting & Email Setup</span>
-                        </li>
-                        <li class="flex items-center space-x-4 text-sm font-medium">
-                            <i class="fas fa-check-circle text-blue-500"></i>
-                            <span>Google Search Console & SEO</span>
-                        </li>
-                        <li class="flex items-center space-x-4 text-sm font-medium">
-                            <i class="fas fa-check-circle text-blue-500"></i>
-                            <span>Responsive Mobile-First Design</span>
-                        </li>
-                    </ul>
-
-                    <div class="pt-8 border-t border-white/10">
-                        <p class="text-blue-400 font-black mb-1 uppercase tracking-widest text-[10px]">Budget Friendly Rates</p>
-                        <p class="text-5xl font-normal serif italic mb-8 uppercase tracking-tighter">Cost Effective</p>
-                        <a href="https://wa.me/9779863201528" class="block w-full text-center bg-blue-600 text-white font-bold py-6 rounded-2xl hover:bg-blue-500 transition-all shadow-xl uppercase tracking-[0.2em] text-xs">
-                            Get Your Quote Today
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Hidden SEO Keywords -->
-            <div class="h-0 opacity-0 overflow-hidden">
-                Medical website developer Nepal, Clinic SEO Kathmandu, Professional doctor portfolio website, Affordable web design for healthcare, Python developer for medical data.
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- CONTACT & CLINICS -->
-    <section id="contact" class="py-32 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-center text-4xl font-black mb-20 italic uppercase tracking-tighter underline decoration-slate-100 decoration-8 underline-offset-8">Headquarters & Partners</h2>
-            <div class="grid md:grid-cols-3 gap-12 mb-20">
-                <div class="p-10 bg-slate-50 rounded-[3rem] border border-slate-100 text-center">
-                    <h4 class="font-black text-xl mb-2 italic text-blue-900">Axis Physiotherapy</h4>
-                    <p class="text-slate-500 text-sm font-bold uppercase tracking-widest">Pulchowk, Lalitpur (HQ)</p>
-                </div>
-                <div class="p-10 bg-slate-50 rounded-[3rem] border border-slate-100 text-center">
-                    <h4 class="font-black text-xl mb-2 italic text-blue-900">Silverline Hospital</h4>
-                    <p class="text-slate-500 text-sm font-bold uppercase tracking-widest">Balaju, Kathmandu</p>
-                </div>
-                <div class="p-10 bg-slate-50 rounded-[3rem] border border-slate-100 text-center">
-                    <h4 class="font-black text-xl mb-2 italic text-blue-900">Karuna City Clinic</h4>
-                    <p class="text-slate-500 text-sm font-bold uppercase tracking-widest">Nayabazaar, Kathmandu</p>
+                <div class="flex flex-wrap gap-5">
+                    <a href="#global" class="bg-indigo-700 text-white px-10 py-5 rounded-full font-semibold shadow-xl hover:bg-indigo-800 transition-all transform hover:-translate-y-1 uppercase text-xs tracking-widest">
+                        Global Licensing <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <a href="tel:+9779863201528" class="bg-white border border-slate-200 text-slate-900 px-10 py-5 rounded-full font-semibold hover:bg-slate-50 transition-all flex items-center shadow-sm uppercase text-xs tracking-widest">
+                        <i class="fas fa-phone-alt mr-3 text-blue-600"></i> Book Home Visit
+                    </a>
                 </div>
             </div>
 
-            <div class="max-w-2xl mx-auto glass p-12 rounded-[4rem] shadow-2xl border border-slate-200 text-center">
-                <h3 class="text-3xl font-black mb-8 italic uppercase tracking-widest">Direct Line</h3>
-                <div class="space-y-4 mb-10">
-                    <a href="tel:+9779863201528" class="text-4xl font-black text-blue-600 tracking-tighter block hover:scale-105 transition">+977 9863201528</a>
-                    <p class="text-slate-400 font-bold tracking-widest">info@suruchidev.com.np</p>
-                </div>
-                <div class="flex justify-center space-x-8">
-                    <a href="https://www.facebook.com/suuruchi.dev" class="text-2xl text-slate-300 hover:text-blue-600 transition"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/suruchi.dev/" class="text-2xl text-slate-300 hover:text-pink-600 transition"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/suruchi-dev/" class="text-2xl text-slate-300 hover:text-blue-800 transition"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.tiktok.com/@suruchidev" class="text-2xl text-slate-300 hover:text-black transition"><i class="fab fa-tiktok"></i></a>
+            <div class="relative group">
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-blue-200/50 rounded-full blur-3xl -z-10"></div>
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=80" alt="Dr. Suruchi Dev Rehabilitation" class="w-full h-[600px] object-cover rounded-[3rem] border-[16px] border-white shadow-2xl">
+                <div class="absolute -bottom-6 -left-10 glass p-8 rounded-[2rem] shadow-2xl border border-white/50 max-w-xs">
+                    <div class="flex items-center space-x-4 mb-3">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg"><i class="fas fa-check"></i></div>
+                        <p class="font-bold text-slate-800 leading-tight">Elite Clinical Care</p>
+                    </div>
+                    <p class="text-sm text-slate-500 font-medium">Focused on Stroke, Paralysis, and Clinical Career Mentorship.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-slate-400 text-[10px] font-black uppercase tracking-[0.4em] bg-white border-t border-slate-100">
+    <!-- PHYSIOTHERAPY HOME VISIT SECTION -->
+    <section id="physio" class="py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto mb-20">
+                <span class="text-blue-600 font-black uppercase tracking-widest text-[10px] mb-4 block">Clinical Home Services</span>
+                <h2 class="text-5xl md:text-6xl font-black mb-6 italic uppercase serif tracking-tighter text-slate-900">Physiotherapy <span class="text-blue-600">Home Visits</span></h2>
+                <p class="text-slate-500 nepali-font text-2xl font-bold mb-6 italic">दक्ष फिजियोथेरापिस्ट र मसाज थेरापिस्टद्वारा घरमै गुणस्तरीय सेवा</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="group p-10 border border-slate-100 rounded-[3.5rem] bg-slate-50 card-hover border-b-8 border-b-blue-600">
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg"><i class="fas fa-brain text-2xl"></i></div>
+                    <h3 class="text-2xl font-black mb-2 uppercase italic serif">Neuro & Stroke</h3>
+                    <p class="text-blue-600 font-bold nepali-font mb-4 italic text-lg">पक्षघात (प्यारालाइसिस) पुनर्स्थापना</p>
+                    <ul class="text-slate-500 text-sm space-y-2 mb-6">
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i> Stroke Recovery at Home</li>
+                        <li><i class="fas fa-check text-blue-600 mr-2"></i> Spinal Cord Injury Rehab</li>
+                    </ul>
+                </div>
+                <div class="group p-10 border border-slate-100 rounded-[3.5rem] bg-slate-50 card-hover border-b-8 border-b-emerald-600">
+                    <div class="w-16 h-16 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg"><i class="fas fa-bone text-2xl"></i></div>
+                    <h3 class="text-2xl font-black mb-2 uppercase italic serif">Orthopedic & Sports</h3>
+                    <p class="text-emerald-600 font-bold nepali-font mb-4 italic text-lg">शल्यक्रिया पछिको फिजियोथेरापी</p>
+                    <ul class="text-slate-500 text-sm space-y-2 mb-6">
+                        <li><i class="fas fa-check text-emerald-600 mr-2"></i> Post-Surgery Recovery</li>
+                        <li><i class="fas fa-check text-emerald-600 mr-2"></i> Ligament & Injury Recovery</li>
+                    </ul>
+                </div>
+                <div class="group p-10 border border-slate-100 rounded-[3.5rem] bg-slate-50 card-hover border-b-8 border-b-orange-500">
+                    <div class="w-16 h-16 bg-orange-500 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg"><i class="fas fa-spa text-2xl"></i></div>
+                    <h3 class="text-2xl font-black mb-2 uppercase italic serif">Massage Therapy</h3>
+                    <p class="text-orange-600 font-bold nepali-font mb-4 italic text-lg">प्रोफेशनल मसाज सेवा</p>
+                    <ul class="text-slate-500 text-sm space-y-2 mb-6">
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i> Deep Tissue Recovery</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i> Stress & Pain Relief</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL CAREER & LICENSING SECTION -->
+    <section id="global" class="py-32 bg-slate-950 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 opacity-[0.03] pointer-events-none"><i class="fas fa-globe-europe text-[50rem] -translate-y-20 translate-x-20"></i></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <span class="text-blue-500 font-bold uppercase tracking-[0.4em] text-[10px] mb-4 block italic">Documentation Specialist</span>
+            <h2 class="text-6xl md:text-8xl font-normal mb-8 italic serif text-white">Global <span class="text-blue-400">Pathways.</span></h2>
+            <p class="text-slate-400 mt-6 max-w-3xl mx-auto text-lg font-light italic leading-relaxed mb-20">Expert mentorship for **HCPC (UK), APC (Australia), and CAPR (Canada)** registration. Multi-faculty admissions for both **Individual & Dependant** applicants worldwide.</p>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <button onclick="openApplyForm('United Kingdom')" class="group bg-slate-900/50 p-12 rounded-[3.5rem] border border-slate-800 hover:border-blue-500 transition-all text-center">
+                    <div class="text-7xl mb-8 group-hover:scale-110 transition filter drop-shadow-lg">🇬🇧</div>
+                    <h3 class="font-bold text-xl uppercase tracking-widest mb-2 serif italic">UK</h3>
+                    <p class="text-[9px] text-blue-400 font-black uppercase tracking-widest">HCPC Registration</p>
+                </button>
+                <button onclick="openApplyForm('Australia')" class="group bg-slate-900/50 p-12 rounded-[3.5rem] border border-slate-800 hover:border-blue-500 transition-all text-center">
+                    <div class="text-7xl mb-8 group-hover:scale-110 transition filter drop-shadow-lg">🇦🇺</div>
+                    <h3 class="font-bold text-xl uppercase tracking-widest mb-2 serif italic">Australia</h3>
+                    <p class="text-[9px] text-blue-400 font-black uppercase tracking-widest">APC Documentation</p>
+                </button>
+                <button onclick="openApplyForm('Canada')" class="group bg-slate-900/50 p-12 rounded-[3.5rem] border border-slate-800 hover:border-blue-500 transition-all text-center">
+                    <div class="text-7xl mb-8 group-hover:scale-110 transition filter drop-shadow-lg">🇨🇦</div>
+                    <h3 class="font-bold text-xl uppercase tracking-widest mb-2 serif italic">Canada</h3>
+                    <p class="text-[9px] text-blue-400 font-black uppercase tracking-widest">CAPR Process</p>
+                </button>
+                <button onclick="openApplyForm('India')" class="group bg-slate-900/50 p-12 rounded-[3.5rem] border border-slate-800 hover:border-blue-500 transition-all text-center">
+                    <div class="text-7xl mb-8 group-hover:scale-110 transition filter drop-shadow-lg">🇮🇳</div>
+                    <h3 class="font-bold text-xl uppercase tracking-widest mb-2 serif italic">India</h3>
+                    <p class="text-[9px] text-blue-400 font-black uppercase tracking-widest">Direct Admissions</p>
+                </button>
+                <button onclick="openApplyForm('Global Destinations')" class="group bg-gradient-to-br from-blue-700 to-indigo-900 p-12 rounded-[3.5rem] hover:shadow-blue-500/30 transition-all text-center shadow-2xl">
+                    <div class="text-7xl mb-8 group-hover:rotate-12 transition text-white">🌍</div>
+                    <h3 class="font-bold text-xl uppercase tracking-widest mb-2 serif italic text-white">Global</h3>
+                    <p class="text-[9px] text-blue-100 font-black uppercase tracking-widest">Worldwide</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- WEB DESIGN SECTION -->
+    <section id="web" class="py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-slate-900 rounded-[4rem] p-10 md:p-20 text-white shadow-2xl overflow-hidden relative border border-white/5">
+                <div class="grid lg:grid-cols-2 gap-16 items-center relative z-10">
+                    <div>
+                        <span class="text-blue-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-4 block italic">Medical Tech Fusion</span>
+                        <h2 class="text-5xl md:text-7xl font-normal mb-8 italic serif text-white">The Digital <span class="text-blue-500 underline decoration-blue-500/30">Prescription.</span></h2>
+                        <p class="text-slate-400 mb-10 text-lg font-light italic leading-relaxed">Clinician-led web design for doctors. Focused on Medical SEO and Patient Trust.</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="https://axisphysiotherapy.com.np/" target="_blank" class="flex items-center justify-between bg-white/5 border border-white/10 p-5 rounded-2xl hover:bg-white hover:text-black transition uppercase text-[10px] font-black">Axis Physio <i class="fas fa-link"></i></a>
+                            <a href="https://wellness-adobe.com/" target="_blank" class="flex items-center justify-between bg-white/5 border border-white/10 p-5 rounded-2xl hover:bg-white hover:text-black transition uppercase text-[10px] font-black">Wellness Adobe <i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 backdrop-blur-xl p-12 rounded-[4rem] border border-white/10 text-center shadow-inner">
+                        <p class="text-5xl font-normal serif italic mb-8 uppercase text-white">Cost Effective</p>
+                        <a href="https://wa.me/9779863201528" class="block bg-blue-600 text-white font-black py-6 rounded-2xl hover:bg-blue-500 transition shadow-xl uppercase text-xs tracking-widest italic">Get Your Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSIGHTS SECTION -->
+    <section id="blog" class="py-32 bg-slate-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-normal mb-16 italic serif text-slate-900">Clinical & Digital <span class="text-blue-600">Insights</span></h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <article class="bg-white rounded-[3rem] overflow-hidden shadow-sm hover:shadow-2xl transition border border-slate-100 group text-left p-10">
+                    <h3 class="font-bold text-xl mb-4 italic serif">Data Science in Neuro Rehab</h3>
+                    <button onclick="openModal('blog1')" class="text-blue-600 font-black text-xs uppercase tracking-widest italic underline underline-offset-4">Read Article →</button>
+                </article>
+                <article class="bg-white rounded-[3rem] overflow-hidden shadow-sm hover:shadow-2xl transition border border-slate-100 group text-left p-10">
+                    <h3 class="font-bold text-xl mb-4 italic serif">The Digital Prescription</h3>
+                    <button onclick="openModal('blog2')" class="text-blue-600 font-black text-xs uppercase tracking-widest italic underline underline-offset-4">Read Article →</button>
+                </article>
+                <article class="bg-white rounded-[3rem] overflow-hidden shadow-sm hover:shadow-2xl transition border border-slate-100 group text-left p-10">
+                    <h3 class="font-bold text-xl mb-4 italic serif">Global Licensing Guide</h3>
+                    <button onclick="openModal('blog3')" class="text-blue-600 font-black text-xs uppercase tracking-widest italic underline underline-offset-4">Read Article →</button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto glass p-16 rounded-[4rem] shadow-2xl border border-slate-200 text-center relative">
+                <h3 class="text-4xl font-normal italic serif mb-10 tracking-widest">Direct Consultation</h3>
+                <div class="space-y-4 mb-12">
+                    <a href="tel:+9779863201528" class="text-4xl font-black text-blue-600 tracking-tighter block hover:scale-105 transition">+977 9863201528</a>
+                    <p class="text-slate-400 font-bold tracking-widest uppercase text-xs italic">info@suruchidev.com.np</p>
+                </div>
+                <div class="flex justify-center space-x-10 text-slate-300">
+                    <a href="https://www.facebook.com/suuruchi.dev" class="text-2xl hover:text-blue-600 transition"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/suruchi.dev/" class="text-2xl hover:text-pink-600 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/suruchi-dev/" class="text-2xl hover:text-blue-800 transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.tiktok.com/@suruchidev" class="text-2xl hover:text-black transition"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-400 text-[9px] font-black uppercase tracking-[0.4em] bg-white border-t border-slate-100">
         <p>© DR. SURUCHI DEV | MPT NEUROLOGY | AXIS PHYSIOTHERAPY PVT. LTD.</p>
     </footer>
 
-    <!-- GLOBAL ASSESSMENT FORM (REVISED EVERGREEN) -->
+    <!-- GLOBAL ASSESSMENT FORM MODAL -->
     <div id="applyModal" class="fixed inset-0 z-[300] hidden bg-slate-900/95 backdrop-blur-xl flex items-center justify-center p-4">
         <div class="bg-white w-full max-w-xl rounded-[3rem] shadow-2xl overflow-hidden relative modal-animate">
             <div class="bg-gradient-to-r from-blue-700 to-indigo-800 p-10 text-white">
                 <button onclick="closeApplyForm()" class="absolute top-8 right-8 text-white/50 hover:text-white transition"><i class="fas fa-times text-2xl"></i></button>
-                <h3 class="text-3xl font-black italic uppercase tracking-tighter">Global Assessment</h3>
-                <p class="text-blue-100 text-[10px] mt-2 font-black tracking-[0.2em] uppercase italic">Targeting: <span id="targetCountryDisplay" class="text-yellow-400 underline decoration-2"></span></p>
+                <h3 class="text-3xl font-black italic uppercase serif tracking-tighter">Global Assessment</h3>
+                <p class="text-blue-100 text-[10px] mt-2 font-black tracking-[0.2em] uppercase italic underline">Target: <span id="targetCountryDisplay"></span></p>
             </div>
 
             <form id="consultancyForm" class="p-10 space-y-6 max-h-[65vh] overflow-y-auto">
                 <input type="hidden" id="formTargetCountry">
-                
                 <div class="grid grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 italic">Full Name</label>
-                        <input type="text" id="applicantName" placeholder="Enter Full Name" class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl focus:border-blue-600 outline-none transition font-bold text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 italic">Age / Sex</label>
-                        <input type="text" id="applicantAgeSex" placeholder="Ex: 26/M" class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl focus:border-blue-600 outline-none transition font-bold text-sm">
-                    </div>
+                    <div><input type="text" id="applicantName" placeholder="Full Name*" required class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl focus:border-blue-600 outline-none font-bold text-sm"></div>
+                    <div><input type="text" id="applicantAgeSex" placeholder="Age / Sex*" required class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl focus:border-blue-600 outline-none font-bold text-sm"></div>
                 </div>
-
-                <div>
-                    <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 italic">Current Qualification</label>
-                    <select id="applicantDegree" onchange="toggleOtherDegree()" class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl focus:border-blue-600 outline-none transition font-bold text-sm">
-                        <option value="BPT (Physiotherapy)">BPT (Physiotherapy)</option>
-                        <option value="MPT (Physiotherapy)">MPT (Physiotherapy)</option>
-                        <option value="Nursing">Nursing (PCL/B.Sc/MN)</option>
-                        <option value="Public Health">Public Health (BPH/MPH)</option>
-                        <option value="Other">Other (Specify Below)</option>
-                    </select>
+                <select id="applicantDegree" onchange="toggleOtherDegree()" class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl outline-none font-bold text-sm">
+                    <option value="BPT (Physiotherapy)">BPT (Physiotherapy)</option>
+                    <option value="MPT (Physiotherapy)">MPT (Physiotherapy)</option>
+                    <option value="Nursing">Nursing (PCL/B.Sc/MN)</option>
+                    <option value="Other">Other Faculty (Specify Below)</option>
+                </select>
+                <div id="otherDegreeDiv" class="hidden"><input type="text" id="otherDegreeText" placeholder="Specify Faculty Name" class="w-full bg-blue-50 border-b-2 border-blue-200 p-4 rounded-xl font-bold text-sm"></div>
+                <select id="applicantIntake" class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl outline-none font-bold text-sm">
+                    <option value="Spring Cycle">Spring Cycle (Jan-March)</option>
+                    <option value="Summer Cycle">Summer Cycle (May-June)</option>
+                    <option value="Fall Cycle">Fall Cycle (Aug-Oct)</option>
+                    <option value="Winter Cycle">Winter Cycle (Nov-Dec)</option>
+                </select>
+                <div class="flex gap-10 mt-2">
+                    <label class="flex items-center space-x-3 italic text-sm font-bold"><input type="radio" name="visaType" value="Individual" checked><span>Individual</span></label>
+                    <label class="flex items-center space-x-3 italic text-sm font-bold"><input type="radio" name="visaType" value="With Dependant"><span>Dependant</span></label>
                 </div>
-
-                <!-- DYNAMIC OTHER DEGREE FIELD -->
-                <div id="otherDegreeDiv" class="hidden animate-fade-in">
-                    <label class="block text-[10px] font-black text-blue-600 uppercase tracking-widest mb-2 italic">Specify Your Faculty/Degree</label>
-                    <input type="text" id="otherDegreeText" placeholder="Enter your degree name" class="w-full bg-blue-50 border-b-2 border-blue-200 p-4 rounded-xl outline-none font-bold text-sm">
-                </div>
-
-                <div>
-                    <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 italic">Preferred Intake Cycle</label>
-                    <select id="applicantIntake" class="w-full bg-slate-50 border-b-2 border-slate-100 p-4 rounded-xl focus:border-blue-600 outline-none transition font-bold text-sm">
-                        <option value="Spring (Jan/Feb/March)">Spring Cycle (Jan/Feb/March)</option>
-                        <option value="Summer (May/June)">Summer Cycle (May/June)</option>
-                        <option value="Fall (August/Sep/Oct)">Fall Cycle (August/Sep/Oct)</option>
-                        <option value="Winter (Nov/Dec)">Winter Cycle (Nov/Dec)</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 italic">Application Status</label>
-                    <div class="flex gap-10 mt-2">
-                        <label class="flex items-center space-x-3 cursor-pointer">
-                            <input type="radio" name="visaType" value="Individual" checked class="w-5 h-5 text-blue-600">
-                            <span class="text-xs font-bold text-slate-600 uppercase tracking-widest italic">Individual</span>
-                        </label>
-                        <label class="flex items-center space-x-3 cursor-pointer">
-                            <input type="radio" name="visaType" value="With Dependant" class="w-5 h-5 text-blue-600">
-                            <span class="text-xs font-bold text-slate-600 uppercase tracking-widest italic">Dependant</span>
-                        </label>
-                    </div>
-                </div>
-
-                <button type="button" onclick="submitGlobalForm()" class="w-full bg-slate-900 text-white font-black py-6 rounded-2xl shadow-xl hover:bg-blue-700 transition-all uppercase tracking-[0.3em] italic text-sm">Submit Assessment</button>
+                <button type="button" onclick="submitGlobalForm()" id="submitBtn" class="w-full bg-slate-900 text-white font-black py-6 rounded-2xl shadow-xl hover:bg-blue-700 transition uppercase tracking-[0.3em] italic text-sm">Submit Assessment</button>
             </form>
+        </div>
+    </div>
+
+    <!-- BLOG MODAL -->
+    <div id="blogModal" class="fixed inset-0 z-[200] hidden bg-slate-900/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-3xl max-h-[90vh] rounded-[3rem] overflow-hidden relative modal-animate">
+            <button onclick="closeModal()" class="absolute top-8 right-8 w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 z-10"><i class="fas fa-times"></i></button>
+            <div id="modalContent" class="overflow-y-auto p-12"></div>
         </div>
     </div>
 
     <!-- SCRIPTS -->
     <script>
-        // Modal Logic
         function openApplyForm(country) {
             document.getElementById('applyModal').classList.remove('hidden');
             document.getElementById('targetCountryDisplay').innerText = country;
@@ -571,47 +354,70 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Dynamic Field Logic
         function toggleOtherDegree() {
-            const degreeSelect = document.getElementById('applicantDegree');
-            const otherDiv = document.getElementById('otherDegreeDiv');
-            if (degreeSelect.value === 'Other') {
-                otherDiv.classList.remove('hidden');
-            } else {
-                otherDiv.classList.add('hidden');
-            }
+            const degree = document.getElementById('applicantDegree').value;
+            document.getElementById('otherDegreeDiv').classList.toggle('hidden', degree !== 'Other');
         }
 
-        // Form Submission Logic
-        function submitGlobalForm() {
+        async function submitGlobalForm() {
+            const btn = document.getElementById('submitBtn');
             const country = document.getElementById('formTargetCountry').value;
             const name = document.getElementById('applicantName').value;
             const ageSex = document.getElementById('applicantAgeSex').value;
-            
-            let degree = document.getElementById('applicantDegree').value;
-            if(degree === 'Other') {
-                degree = document.getElementById('otherDegreeText').value || 'Other Faculty';
-            }
-
             const intake = document.getElementById('applicantIntake').value;
             const visa = document.querySelector('input[name="visaType"]:checked').value;
-            
-            if(!name || !ageSex) {
-                alert("Please provide your name and age/sex details.");
-                return;
+            let degree = document.getElementById('applicantDegree').value;
+            if(degree === 'Other') degree = document.getElementById('otherDegreeText').value;
+
+            if(!name || !ageSex) { alert("Please complete required fields."); return; }
+
+            btn.innerText = "SENDING ASSESSMENT...";
+            btn.disabled = true;
+
+            const emailParams = {
+                target_country: country,
+                applicant_name: name,
+                age_sex: ageSex,
+                qualification: degree,
+                intake_cycle: intake,
+                application_status: visa
+            };
+
+            try {
+                // INTEGRATED IDs
+                await emailjs.send('service_j6hutnk', 'template_a097hxd', emailParams);
+                console.log('Inquiry sent to info@suruchidev.com.np');
+            } catch (error) {
+                console.error('EmailJS Error:', error);
             }
-            
-            const whatsappMsg = `*GLOBAL CAREER ASSESSMENT*%0A--------------------------%0A*Target Country:* ${country}%0A*Full Name:* ${name}%0A*Age/Sex:* ${ageSex}%0A*Qualification:* ${degree}%0A*Intake Cycle:* ${intake}%0A*Status:* ${visa}`;
-            
-            window.open(`https://wa.me/9779863201528?text=${whatsappMsg}`, '_blank');
+
+            const msg = `*GLOBAL CAREER ASSESSMENT*%0A*Target:* ${country}%0A*Name:* ${name}%0A*Age/Sex:* ${ageSex}%0A*Qualification:* ${degree}%0A*Intake:* ${intake}%0A*Type:* ${visa}`;
+            window.open(`https://wa.me/9779863201528?text=${msg}`, '_blank');
+
+            btn.innerText = "SUBMIT ASSESSMENT";
+            btn.disabled = false;
             closeApplyForm();
         }
 
-        // Mobile Menu
+        const blogs = {
+            blog1: { title: "Data Science in Neuro Rehab", subtitle: "Tech & Health", content: `<p class="italic text-slate-600">How Python-based tracking is improving stroke recovery outcomes at Axis Physiotherapy...</p>` },
+            blog2: { title: "The Digital Prescription", subtitle: "Web Design", content: `<p class="italic text-slate-600">Establishing trust in the digital era: Why clinicians need professional websites...</p>` },
+            blog3: { title: "Global Licensing Guide", subtitle: "Career Mentorship", content: `<p class="italic text-slate-600">The roadmap to HCPC (UK), APC (Australia), and CAPR (Canada) registration for physiotherapists...</p>` }
+        };
+
+        function openModal(blogKey) {
+            const blog = blogs[blogKey];
+            document.getElementById('modalContent').innerHTML = `<span class="text-blue-600 font-bold uppercase text-[10px] tracking-widest italic">${blog.subtitle}</span><h2 class="text-4xl font-normal text-slate-900 mt-2 mb-8 italic serif">${blog.title}</h2>${blog.content}`;
+            document.getElementById('blogModal').classList.remove('hidden');
+        }
+
+        function closeModal() { document.getElementById('blogModal').classList.add('hidden'); }
+
         document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+            const menu = document.getElementById('mobile-menu'); // Mobile menu placeholder logic
+            alert("Mobile Menu Active");
         });
     </script>
+
 </body>
 </html>
