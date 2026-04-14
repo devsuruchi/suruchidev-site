@@ -15,3 +15,4 @@ RewriteRule ^(.*)$ $1.html [NC,L]
     ExpiresByType image/jpeg "access plus 1 year"
     ExpiresByType image/gif "access plus 1 year"
     Expires
+AddType text/html .html
