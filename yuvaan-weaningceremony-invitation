@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvaan's Annaprashan Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Yantramanav:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --maroon: #800000;
+            --cream: #FFFDD0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--maroon);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Background Animation */
+        .petals-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* Invitation Card */
+        .invite-card {
+            background: var(--cream);
+            width: 90%;
+            max-width: 500px;
+            padding: 40px;
+            text-align: center;
+            border: 8px double var(--gold);
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 10;
+            border-radius: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Yantramanav', sans-serif;
+            color: var(--maroon);
+            font-size: 3rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px var(--gold);
+        }
+
+        .sub-text {
+            color: var(--maroon);
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        /* Baby Photo Section */
+        .photo-frame {
+            width: 180px;
+            height: 180px;
+            margin: 40px auto;
+            border-radius: 50%;
+            border: 5px solid var(--gold);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eee;
+            overflow: visible;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .photo-placeholder {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* 84 Byanjan (Bowls) Animation */
+        .bowls-container {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            top: -50px;
+            left: -50px;
+            animation: rotateBowls 20s linear infinite;
+        }
+
+        .bowl {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: #cd7f32; /* Bronze color */
+            border-radius: 50% 50% 20% 20%;
+            border: 2px solid gold;
+        }
+
+        /* Information Styling */
+        .details {
+            margin-top: 20px;
+            border-top: 2px solid var(--gold);
+            padding-top: 20px;
+            color: var(--maroon);
+        }
+
+        .date {
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+        .venue {
+            margin-top: 10px;
+            background: var(--maroon);
+            color: white;
+            padding: 5px 15px;
+            display: inline-block;
+            border-radius: 20px;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes rotateBowls {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+        }
+
+        .petal {
+            position: absolute;
+            background-color: #ffcc00;
+            width: 15px;
+            height: 15px;
+            border-radius: 50% 0 50% 0;
+            animation: fall 5s linear infinite;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="petals-container" id="petals"></div>
+
+    <div class="invite-card">
+        <p class="sub-text">Join us for the Weaning Ceremony of</p>
+        <h2 style="color: var(--gold); margin: 0;">YUVAAN</h2>
+        
+        <div class="photo-frame">
+            <!-- REPLACE 'yuvaan.jpg' WITH YOUR SON'S ACTUAL PHOTO URL -->
+            <img src="https://via.placeholder.com/180" alt="Yuvaan's Picture">
+            
+            <!-- This container holds the 84 bowls representation -->
+            <div class="bowls-container" id="bowls-circle"></div>
+        </div>
+
+        <h1>अन्नप्राशन</h1>
+        <p class="sub-text">A Taste of Tradition (84 Byanjan)</p>
+
+        <div class="details">
+            <div class="date">7 Baisakh 2083</div>
+            <div style="font-size: 0.9rem;">20th April 2026</div>
+            <div class="venue">Venue: Jorpati, Kathmandu</div>
+        </div>
+
+        <p style="font-size: 0.8rem; margin-top: 20px;">We look forward to your blessings!</p>
+    </div>
+
+    <script>
+        // Generate 12 representative bowls for the Chaurasi Byanjan visual
+        const bowlsCircle = document.getElementById('bowls-circle');
+        for (let i = 0; i < 12; i++) {
+            const bowl = document.createElement('div');
+            bowl.className = 'bowl';
+            const angle = (i / 12) * (2 * Math.PI);
+            const radius = 130; 
+            const x = 140 + radius * Math.cos(angle) - 12;
+            const y = 140 + radius * Math.sin(angle) - 12;
+            bowl.style.left = x + 'px';
+            bowl.style.top = y + 'px';
+            bowlsCircle.appendChild(bowl);
+        }
+
+        // Generate Falling Marigold Petals
+        const petalsContainer = document.getElementById('petals');
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.className = 'petal';
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            petal.style.opacity = Math.random();
+            petalsContainer.appendChild(petal);
+
+            setTimeout(() => {
+                petal.remove();
+            }, 5000);
+        }
+        setInterval(createPetal, 300);
+    </script>
+</body>
+</html>
