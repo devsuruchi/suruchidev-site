@@ -3,232 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuvaan's Annaprashan Invitation</title>
-    <!-- Google Fonts for Nepali and English -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Yantramanav:wght@900&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --gold: #D4AF37;
-            --maroon: #7b0000;
-            --cream: #fff9e6;
-            --bronze: #cd7f32;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: var(--maroon);
-            font-family: 'Poppins', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        /* Falling Marigold Animation */
-        .petal {
-            position: absolute;
-            background-color: #ffcc00;
-            width: 12px;
-            height: 12px;
-            border-radius: 50% 0 50% 0;
-            z-index: 1;
-            animation: fall linear infinite;
-        }
-
-        @keyframes fall {
-            0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
-        }
-
-        /* The Main Card */
-        .card {
-            background: var(--cream);
-            width: 90%;
-            max-width: 450px;
-            padding: 30px;
-            text-align: center;
-            border: 10px double var(--gold);
-            border-radius: 30px;
-            position: relative;
-            z-index: 10;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-        }
-
-        /* Anniversary Title */
-        h1 {
-            font-family: 'Yantramanav', sans-serif;
-            color: var(--maroon);
-            font-size: 3.5rem;
-            margin: 0;
-            padding: 0;
-            line-height: 1;
-        }
-
-        .english-title {
-            font-size: 1.2rem;
-            color: var(--maroon);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-
-        /* Central Image Section */
-        .photo-container {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            margin: 60px auto; /* Space for the 84 bowls */
-        }
-
-        .yuvaan-photo {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            border: 5px solid var(--gold);
-            object-fit: cover;
-            position: relative;
-            z-index: 5;
-            background: #fff;
-        }
-
-        /* 84 Byanjan (Bowls) Wrapper */
-        .bowls-orbit {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-        }
-
-        .mini-bowl {
-            position: absolute;
-            width: 12px;
-            height: 8px;
-            background: var(--bronze);
-            border: 1px solid gold;
-            border-radius: 0 0 10px 10px;
-            box-shadow: inset 0 -2px 2px rgba(0,0,0,0.3);
-        }
-
-        /* Weaning Ceremony Graphic */
-        .baby-graphic {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        /* Event Details */
-        .info-box {
-            border-top: 2px solid var(--gold);
-            margin-top: 20px;
-            padding-top: 20px;
-            color: var(--maroon);
-        }
-
-        .date-text {
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
-
-        .venue-tag {
-            display: inline-block;
-            background: var(--maroon);
-            color: white;
-            padding: 5px 20px;
-            border-radius: 50px;
-            margin-top: 10px;
-            font-size: 1.1rem;
-        }
-
-        .blessing-text {
-            font-style: italic;
-            font-size: 0.9rem;
-            margin-top: 20px;
-        }
-
-        /* Rotating Animation */
-        @keyframes rotateOrbit {
-            from { transform: translate(-50%, -50%) rotate(0deg); }
-            to { transform: translate(-50%, -50%) rotate(360deg); }
-        }
-
-        .bowls-orbit {
-            animation: rotateOrbit 40s linear infinite;
-        }
-    </style>
+    <title>Yuvaan's Annaprashan Ceremony</title>
+    
+    <!-- External Scripts (Matching your site's style) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="invitation-style.css">
 </head>
-<body>
+<body class="bg-slate-900 overflow-hidden">
 
-    <!-- Falling Petals Container -->
-    <div id="petals"></div>
+    <!-- Animation Canvas for Falling Petals -->
+    <div id="petal-container" class="fixed inset-0 pointer-events-none z-0"></div>
 
-    <div class="card">
-        <div class="baby-graphic">👶🥣🍼</div>
-        <p style="margin: 0; color: #555;">Join us for the Weaning Ceremony of</p>
-        <h2 style="color: var(--gold); margin: 5px 0; font-size: 2rem;">YUVAAN</h2>
-
-        <!-- Photo Section with 84 Bowls -->
-        <div class="photo-container">
-            <!-- 84 Bowls will be generated here by JS -->
-            <div class="bowls-orbit" id="orbit"></div>
-            <!-- Yuvaan's Picture -->
-            <img src="yuvaan_pp.jpg" alt="Yuvaan" class="yuvaan-photo">
-        </div>
-
-        <div class="english-title">Annaprashan</div>
-        <h1>अन्नप्राशन</h1>
+    <main class="relative z-10 min-h-screen flex items-center justify-center p-4">
         
-        <p style="font-weight: 600; color: var(--maroon); margin-top: 5px;">
-            Celebrating Chaurasi Byanjan
-        </p>
+        <!-- THE CARD -->
+        <div class="invite-card bg-[#FFFDD0] max-w-md w-full rounded-[2.5rem] border-[10px] border-double border-[#D4AF37] p-8 text-center shadow-2xl overflow-hidden relative">
+            
+            <!-- Traditional Border Accent -->
+            <div class="absolute top-0 left-0 w-full h-2 bg-[#800000]"></div>
 
-        <div class="info-box">
-            <div class="date-text">7 Baisakh 2083</div>
-            <div style="color: #666;">20th April 2026</div>
-            <div class="venue-tag">📍 Jorpati, Kathmandu</div>
+            <header class="mb-6">
+                <p class="text-[#800000] uppercase tracking-[0.3em] text-xs font-bold mb-2">Weaning Ceremony of</p>
+                <h2 class="text-[#D4AF37] text-4xl font-extrabold tracking-tight">YUVAAN</h2>
+            </header>
+
+            <!-- THE 84 BYANJAN GRAPHIC -->
+            <div class="relative w-56 h-56 mx-auto mb-8">
+                <!-- Rotating Orbit for 84 Bowls -->
+                <div id="bowls-orbit" class="absolute inset-0 z-0"></div>
+                
+                <!-- Yuvaan's Picture -->
+                <div class="relative z-10 w-full h-full rounded-full border-4 border-[#D4AF37] overflow-hidden bg-slate-200 shadow-lg">
+                    <img src="yuvaan_pp.jpg" alt="Yuvaan" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/400?text=Yuvaan';">
+                </div>
+            </div>
+
+            <!-- ANNAPRASHAN IN DEVANAGARI -->
+            <div class="mb-6">
+                <h1 class="text-[#800000] text-6xl font-bold leading-none font-['Mukta']">अन्नप्राशन</h1>
+                <p class="text-[#800000] font-semibold mt-2 opacity-80 italic">The Royal Feast of 84 Byanjan</p>
+            </div>
+
+            <!-- EVENT DETAILS -->
+            <div class="border-y-2 border-[#D4AF37]/30 py-4 mb-6">
+                <div class="text-[#800000] text-xl font-bold">7 Baisakh 2083</div>
+                <div class="text-slate-500 text-sm font-medium">20th April 2026</div>
+                
+                <div class="mt-4 inline-flex items-center gap-2 bg-[#800000] text-white px-4 py-2 rounded-full text-sm">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                    <span>Jorpati, Kathmandu</span>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="space-y-4">
+                <p class="text-slate-600 text-xs italic">
+                    Join us as our 5-month-old prince takes his first bite of tradition.
+                </p>
+                
+                <a href="https://wa.me/?text=I+am+joining+Yuvaan's+Ceremony" class="inline-block w-full py-4 bg-[#D4AF37] text-[#800000] rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-[#b8952e] transition-colors shadow-lg">
+                    Send Blessings
+                </a>
+            </footer>
+
         </div>
+    </main>
 
-        <p class="blessing-text">"Your presence and blessings will make Yuvaan's first meal even sweeter."</p>
-    </div>
-
-    <script>
-        // 1. Generate 84 small bowls representing Chaurasi Byanjan
-        const orbit = document.getElementById('orbit');
-        const totalBowls = 84;
-        const radius = 130; // How far the bowls sit from the center
-
-        for (let i = 0; i < totalBowls; i++) {
-            const bowl = document.createElement('div');
-            bowl.className = 'mini-bowl';
-            
-            // Calculate position in a circle
-            const angle = (i / totalBowls) * 360;
-            const x = 100 + radius * Math.cos(angle * Math.PI / 180) - 6;
-            const y = 100 + radius * Math.sin(angle * Math.PI / 180) - 4;
-            
-            bowl.style.left = x + 'px';
-            bowl.style.top = y + 'px';
-            // Vary colors slightly for realism
-            if (i % 3 === 0) bowl.style.background = '#d4af37'; 
-            
-            orbit.appendChild(bowl);
-        }
-
-        // 2. Falling Marigold Petals effect
-        const petalsContainer = document.getElementById('petals');
-        function createPetal() {
-            const petal = document.createElement('div');
-            petal.className = 'petal';
-            petal.style.left = Math.random() * 100 + 'vw';
-            petal.style.animationDuration = (Math.random() * 3 + 3) + 's';
-            petal.style.opacity = Math.random();
-            petalsContainer.appendChild(petal);
-            setTimeout(() => petal.remove(), 6000);
-        }
-        setInterval(createPetal, 200);
-    </script>
+    <script src="invitation-logic.js"></script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
